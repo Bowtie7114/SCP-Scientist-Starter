@@ -6,82 +6,82 @@
 ### Wireframe ###
 
 Login Page: <br>
-![Login Page]()
+![Login Page](docs/readme_images/Login_Page.png)
 
 <br>
 
 Login Page Mobile: <br>
-![Login Page Mobile]()
+![Login Page Mobile](docs/readme_images/Login_Page_Mobile.png)
 
 <br>
 
 First Page: <br>
-![First Page]()
+![First Page](docs/readme_images/First_Page.png)
 
 <br>
 
 First Page Mobile: <br>
-![First Page Mobile]()
+![First Page Mobile](docs/readme_images/First_Page_Mobile.png)
 
 <br>
 
 Second Page: <br>
-![Second Page]()
+![Second Page](docs/readme_images/Second_Page.png)
 
 <br>
 
 Second Page Mobile: <br>
-![Second Page Mobile]()
+![Second Page Mobile](docs/readme_images/Second_Page_Mobile.png)
 
 <br>
 
 Third Page: <br>
-![Third Page]()
+![Third Page](docs/readme_images/Third_Page.png)
 
 <br>
 
 Third Page Mobile: <br>
-![Third Page Mobile]()
+![Third Page Mobile](docs/readme_images/Third_Page_Mobile.png)
 
 <br>
 
 Fourth Page: <br>
-![Fourth Page]()
+![Fourth Page](docs/readme_images/Fourth_Page.png)
 
 <br>
 
 Fourth Page Mobile: <br>
-![Fourth Page Mobile]()
+![Fourth Page Mobile](docs/readme_images/Fourth_Page_Mobile.png)
 
 <br>
 
 Secret Page: <br>
-![Secret Page]()
+![Secret Page](docs/readme_images/Secret_Page.png)
 
 <br>
 
 Secret Page Mobile: <br>
-![Secret Page Mobile]()
+![Secret Page Mobile](docs/readme_images/Secret_Page_Mobile.png)
 
 <br>
 
 Final Page: <br>
-![Final Page]()
+![Final Page](docs/readme_images/Final_Page.png)
 
 <br>
 
 Final Page Mobile: <br>
-![Final Page Mobile]()
+![Final Page Mobile](docs/readme_images/Final_Page_Mobile.png)
 
 <br>
 
 404 Page: <br>
-![404 Page]()
+![404 Page](docs/readme_images/404_Page.png)
 
 <br>
 
 404 Page Mobile: <br>
-![404 Page Mobile]()
+![404 Page Mobile](docs/readme_images/404_Page_Mobile.png)
 
 <br>
 
