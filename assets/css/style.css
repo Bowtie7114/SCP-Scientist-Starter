@@ -1,0 +1,14 @@
+/* Wildcard selector, overrides browser settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+  }
+  
+  /* General styling */
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
