@@ -25,22 +25,16 @@
                 <span>Contain.</span>
                 <span>Protect.</span>
             </div>
-            <div id="login-form">
-                <form>
-                    <table id="">
-                        <tr>
-                            <td>Username:</td>
-                            <td><input type="text" name="username" value="" maxlength="15"></td>
-                        </tr>
-                        <tr>
-                            <td>Password:</td>
-                            <td><input type="password" name="password" value="" minlength="8" required></td>
-                        </tr>
-                        <tr>
-                            <td>Re-enter Password:</td>
-                            <td><input type="password" name="password" value="" minlength="8" required></td>
-                        </tr>
-                    </table>
+            <div>
+                <form id="login-form" action="">
+                    <h3>Please enter your Username and a memorable Password.</h3>
+                    <label for="name">Username</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" required><br>
+                    <label for="password2">Re-enter Password</label>
+                    <input type="password" id="password2" name="password2" minlength="8" required><br><br>
+                    <button type="submit" id="submit">Sign in</button>
                 </form>
             </div>
         </section>
