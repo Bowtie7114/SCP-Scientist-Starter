@@ -86,6 +86,26 @@ Final Page Mobile: <br>
 <br>
 
 ## Technologies ##
+- HTML
+  <br> Used as the structure language for the site.
+- CSS
+  <br> Used to style the website via an external stylesheet.
+- JavaScript
+  <br> Used to introduce interactivity to the site via an external scriptsheet.
+- GitHub
+  <br> Used as a repository to store site information and act as a hosting platform.
+- Git
+  <br> Used to commit and push information to GitHub.
+- Gitpod
+  <br> Used as the IDE for this sites development.
+- FontAwesome
+  <br> Used to display symbols such as the burger icon, socials, and store pages icons.
+- balsamiq
+  <br> Used to create wireframe designs for website.
+- cloudconvert.com
+  <br> Used to convert hero and content images from .png to .webp.
+- tinypng.com
+  <br> Used to compress image files before upload to increase web loading performance.
 
 ## Testing (May be in separate .md file depending on size) ##
 ### Accessibility ###
@@ -119,6 +139,7 @@ A site can be deployed to GitHub Pages by:
 
 ## Credits ##
 ### Content ###
+- Various coding tips acquired from [W3Schools](https://www.w3schools.com/)
 #### SCP Foundation Wiki URLs ####
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
 ### Media ### 
