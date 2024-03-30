@@ -39,3 +39,7 @@
     align-content: center;
     padding-top: 3em;
   }
+
+  header {
+    border-bottom: 3px solid black;
+  }
