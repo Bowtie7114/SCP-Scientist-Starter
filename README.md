@@ -145,8 +145,8 @@ A site can be deployed to GitHub Pages by:
 - [SCP-006](https://scp-wiki.wikidot.com/scp-006), the Fountain of Youth, used in the O5 exclusive page, secret.html
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
 ### Media ### 
-- Partner [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site.
-
+- Fiancé [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site.
+- SCP Scientist from the game SCP: Secret Laboratory, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/Scientist).
 ### Licensing ###
 
 As per the [SCP Licensing Guide](https://scp-wiki.wikidot.com/licensing-guide), this project is also subject to the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) licensing agreement.
