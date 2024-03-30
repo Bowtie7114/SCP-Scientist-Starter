@@ -146,13 +146,15 @@ header {
 /* Main */
 
 main {
-
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
 }
 
 /* Footer */
 
 footer {
-
+  border-top: 3px solid black;
 }
 
 /* Media queries */
