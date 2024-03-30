@@ -13,6 +13,11 @@ body {
   flex-direction: column;
 }
 
+.redacted {
+  color: #030303;
+  background-color: #030303;
+}
+
 /* Login Page */
 
 #login {
