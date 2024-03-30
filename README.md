@@ -144,6 +144,7 @@ A site can be deployed to GitHub Pages by:
 #### SCP Foundation Wiki URLs ####
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
 ### Media ### 
+- Partner [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site.
 
 ### Licensing ###
 
