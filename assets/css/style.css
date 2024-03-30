@@ -163,6 +163,11 @@ main {
   flex-direction: column;
 }
 
+#killswitch {
+  height: auto;
+  width: 100%;
+}
+
 /* Footer */
 
 footer {
