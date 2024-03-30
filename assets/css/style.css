@@ -4,42 +4,78 @@
     margin: 0;
     box-sizing: border-box;  
   }
+
+/* General styling */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Page */
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1.5em 1.5em;
+}
+
+#SCP-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 70%;
+}
+
+#login-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 3em;
+}
+
+/* Header */
+
+header {
+  border-bottom: 3px solid black;
+}
+
+/* Main */
+
+main {
+
+}
+
+/* Footer */
+
+footer {
+
+}
+
+/* Media queries */
+
+/* Large or landscape phones */
+@media screen and (min-width: 576px) {
+
+}
+
+/* Tablets and larger */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Laptops and desktop screens */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
   
-  /* General styling */
-  
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Login Page */
-
-  #login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 1.5em 1.5em;
-  }
-
-  #SCP-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 70%;
-  }
-
-  #login-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding-top: 3em;
-  }
-
-  header {
-    border-bottom: 3px solid black;
-  }
+}
