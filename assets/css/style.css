@@ -120,10 +120,18 @@ header {
   transition-duration: .25s;
 }
 
+.menu__item:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 /* End of burger animation CSS */
 
 #title {
-
+  
 }
 
 #logo {
