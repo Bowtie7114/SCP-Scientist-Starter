@@ -142,6 +142,7 @@ A site can be deployed to GitHub Pages by:
 - Various coding tips acquired from [W3Schools](https://www.w3schools.com/)
 - Burger menu animation code taken from [Alvaro Trigo](https://alvarotrigo.com/blog/hamburger-menu-css/), option 7.
 #### SCP Foundation Wiki URLs ####
+- [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
 - [SCP-006](https://scp-wiki.wikidot.com/scp-006), the Fountain of Youth, used in the O5 exclusive page, secret.html
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
 - [SCP-1471](https://scp-wiki.wikidot.com/scp-1471) used as an incorrect image on the welcome page.
