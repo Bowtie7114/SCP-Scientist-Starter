@@ -1,4 +1,47 @@
+/**
+ * Stores the current page name for use in if statements that prevent functions firing on pages they should not
+ */
+var page = '';
+
+document.addEventListener("DOMContentLoaded", function() {
+
+var path = window.location.pathname;
+page = path.split("/").pop();
+});
+
+/**
+ * Fade in animation for index.html
+ */
+
+let loginLogo = document.getElementById('login-logo');
+let loginForm = document.getElementById('login-form');
+let disclaimer = document.getElementById('disclaimer');
+let opacity = 0;
 let username = '';
+
+function fadeAnimation(element) {
+    let fadeIn = setInterval(() => {
+        if (opacity >= 1) {
+            clearInterval(fadeIn);
+        }
+        element.style.opacity = opacity;
+        opacity += 0.01;
+    }, 10);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (page === 'index.html') {
+        fadeAnimation(loginLogo);
+        fadeAnimation(loginForm);
+    }
+});
+
+document.addEventListener("click", function() {
+    if (page === 'index.html') {
+        fadeAnimation(disclaimer);
+    }
+})
+
 
 /** 
  * Function completely hides the 'Login' button until the Username is entered and the passwords match
@@ -18,7 +61,9 @@ function passCheck() {
   }
 
   document.addEventListener('input', function() {
-    passCheck();
+    if (page = 'index.html') {
+        passCheck();
+    }
   })
 
   /**
@@ -29,6 +74,10 @@ function submit() {
     username = document.getElementById('name').value;
 }
 
+if (page === 'index.html') {
+    document.getElementById('login-button').addEventListener("click", submit);
+};
+
 /**
  *  Function links index.html to welcome.html via the sign in button once it is active.
  */
@@ -37,15 +86,6 @@ function redirect() {
     window.location.href = 'welcome.html';
 }
 
-document.getElementById('login-button').addEventListener("click", submit);
-
 /**
- * 
- *
-
-document.onreadystatechange = () => {
-    let title = document.getElementById('welcome-title');
-    title.value = 'Welcome, ' + username + '!';
-} 
-
-*/
+ * Username will be applied to the h1 element on welcome.html and the downloadable ID pass on congrats.html with this function
+ */ 
