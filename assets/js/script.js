@@ -4,9 +4,8 @@
 var page = '';
 
 document.addEventListener("DOMContentLoaded", function() {
-
-var path = window.location.pathname;
-page = path.split("/").pop();
+    var path = window.location.pathname;
+    page = path.split("/").pop();
 });
 
 /**

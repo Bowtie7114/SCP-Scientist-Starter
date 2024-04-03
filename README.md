@@ -115,6 +115,7 @@ Final Page Mobile: <br>
 ### Functional ###
 - A separate scriptsheet was created specifically for the index page, index.js, to house the animation javascript code. It would run on other pages continuously as it was looking for elements that did not exist on those pages due to the eventhandler 
 allocated to it. Future attempts will work towards making it so that the separate page was not necessary.
+- Following on from the above - code was added on lines 1-9 of script.js that allows the page target from the URL to be shortened to just the html names (eg. index.html, welcome.html etc). I could then use if statements so that certain functions only worked on certain pages, preventing continuous loading where it was not needed.
 
 ## Deployment ##
 ### Version Control ###
@@ -146,6 +147,7 @@ A site can be deployed to GitHub Pages by:
 - Initial javaScript code for fade-in animation from [tutorialspoint](https://www.tutorialspoint.com/how-to-add-fade-in-effect-using-pure-javascript).
 - Fiancé [Magdalena](https://github.com/Madzikdek) for JS syntax help.
 - Redirect using JavaScript code from [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-redirect-to-another-webpage-using-javascript/), used on 'Sign In' button on index.html.
+- Code to snip the end of a URL used from [Stack Overflow](https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript).
 
 #### SCP Foundation Wiki URLs ####
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
