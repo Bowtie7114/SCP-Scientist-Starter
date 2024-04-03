@@ -37,6 +37,7 @@ function passCheck() {
   
     if (password.value === vpassword.value && password.value.length > 0) {
       document.getElementById("login-button").disabled = false;
+      ;
     }
     else {
       document.getElementById("login-button").disabled = true;
@@ -55,4 +56,23 @@ function submit() {
     username = document.getElementById('name').value;
 }
 
+/**
+ *  Function links index.html to welcome.html via the sign in button once it is active.
+ */
+
+function redirect() {
+    window.location.href = 'welcome.html';
+}
+
 document.getElementById('login-button').addEventListener("click", submit);
+
+/**
+ * 
+ *
+
+document.onreadystatechange = () => {
+    let title = document.getElementById('welcome-title');
+    title.value = 'Welcome, ' + username + '!';
+} 
+
+*/

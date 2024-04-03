@@ -143,6 +143,7 @@ A site can be deployed to GitHub Pages by:
 - Burger menu animation code taken from [Alvaro Trigo](https://alvarotrigo.com/blog/hamburger-menu-css/), option 7.
 - Initial javaScript code for fade-in animation from [tutorialspoint](https://www.tutorialspoint.com/how-to-add-fade-in-effect-using-pure-javascript).
 - Fiancé [Magdalena](https://github.com/Madzikdek) for JS syntax help.
+- Redirect using JavaScript code from [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-redirect-to-another-webpage-using-javascript/), used on 'Sign In' button on index.html.
 
 #### SCP Foundation Wiki URLs ####
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
