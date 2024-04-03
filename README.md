@@ -142,6 +142,8 @@ A site can be deployed to GitHub Pages by:
 - Various coding tips acquired from [W3Schools](https://www.w3schools.com/)
 - Burger menu animation code taken from [Alvaro Trigo](https://alvarotrigo.com/blog/hamburger-menu-css/), option 7.
 - Initial javaScript code for fade-in animation from [tutorialspoint](https://www.tutorialspoint.com/how-to-add-fade-in-effect-using-pure-javascript).
+- Fiancé [Magdalena](https://github.com/Madzikdek) for JS syntax help.
+
 #### SCP Foundation Wiki URLs ####
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
 - [SCP-006](https://scp-wiki.wikidot.com/scp-006), the Fountain of Youth, used in the O5 exclusive page, secret.html
@@ -151,6 +153,7 @@ A site can be deployed to GitHub Pages by:
 - [SCP-914](https://scp-wiki.wikidot.com/scp-914), The Clockworks, used as one of the SCPs assigned to the User.
 - [SCP-999](https://scp-wiki.wikidot.com/scp-999), the Tickle Monster, used as one of the SCPs assigned to the User.
 - [SCP-1471](https://scp-wiki.wikidot.com/scp-1471), MalO ver1.0.0, used as an incorrect image on the welcome page.
+
 ### Media ### 
 - SCP Logo taken directly from the [SCP Foundation site](http://scp-int.wikidot.com/).
 - Fiancé [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site.
@@ -158,6 +161,6 @@ A site can be deployed to GitHub Pages by:
 - Image of SCP-914, The Clockworks, from the game SCP: Secret Laboratory, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/SCP-914).
 - Image of a plushie SCP-999, The Tickle Monster, taken from the [Plushy Factory Website](https://plushfoundry.com/products/scp-999-tickle-monster).
 - Image of SCP-847, The Mannequin, taken from the [SCP Foundation site](https://scp-wiki.wikidot.com/scp-847) 847 entry page.
-### Licensing ###
 
+### Licensing ###
 As per the [SCP Licensing Guide](https://scp-wiki.wikidot.com/licensing-guide), this project is also subject to the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) licensing agreement.
