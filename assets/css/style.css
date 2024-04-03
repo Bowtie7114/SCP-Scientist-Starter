@@ -43,6 +43,15 @@ body {
   justify-content: center;
   align-content: center;
   padding-top: 3em;
+  opacity: 0;
+}
+
+#login-form {
+  opacity: 0;
+}
+
+#disclaimer {
+  opacity: 0;
 }
 
 /* Header */

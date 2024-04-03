@@ -141,6 +141,7 @@ A site can be deployed to GitHub Pages by:
 ### Content ###
 - Various coding tips acquired from [W3Schools](https://www.w3schools.com/)
 - Burger menu animation code taken from [Alvaro Trigo](https://alvarotrigo.com/blog/hamburger-menu-css/), option 7.
+- Initial javaScript code for fade-in animation from [tutorialspoint](https://www.tutorialspoint.com/how-to-add-fade-in-effect-using-pure-javascript).
 #### SCP Foundation Wiki URLs ####
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
 - [SCP-006](https://scp-wiki.wikidot.com/scp-006), the Fountain of Youth, used in the O5 exclusive page, secret.html
