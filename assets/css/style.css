@@ -168,15 +168,41 @@ main {
   padding: 5px 5px;
 }
 
+/* Welcome page */
+
+#reference-image {
+
+}
+
+#next-page {
+
+}
+
+/* SCPs page */
+
+#SCP-info {
+
+}
+
+/* Responsibilities page */
+
+/* Breaches page */
+
+/* Secret page */
+
 #killswitch {
   height: auto;
   width: 100%;
 }
 
+/* Congrats page */
+
 /* Footer */
 
 footer {
   border-top: 3px solid black;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 /* Media queries */
@@ -195,7 +221,7 @@ footer {
 
 /* Laptops and desktop screens */
 @media screen and (min-width: 992px) {
-  
+
 }
 
 /* Large screens */
