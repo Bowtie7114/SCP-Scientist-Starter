@@ -99,11 +99,11 @@ Final Page Mobile: <br>
 - Gitpod
   <br> Used as the IDE for this sites development.
 - FontAwesome
-  <br> Used to display symbols such as the burger icon, socials, and store pages icons.
+  <br> Used to display symbols.
 - balsamiq
   <br> Used to create wireframe designs for website.
 - cloudconvert.com
-  <br> Used to convert hero and content images from .png to .webp.
+  <br> Used to convert images to .webp format.
 - tinypng.com
   <br> Used to compress image files before upload to increase web loading performance.
 
@@ -147,6 +147,7 @@ A site can be deployed to GitHub Pages by:
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
 - [SCP-1471](https://scp-wiki.wikidot.com/scp-1471) used as an incorrect image on the welcome page.
 ### Media ### 
+- SCP Logo taken directly from the [SCP Foundation site](http://scp-int.wikidot.com/).
 - Fiancé [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site.
 - SCP Scientist from the game SCP: Secret Laboratory, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/Scientist).
 ### Licensing ###
