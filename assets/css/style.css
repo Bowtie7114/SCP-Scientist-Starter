@@ -48,7 +48,10 @@ body {
 /* Header */
 
 header {
+  background-color: #ffffff;
   border-bottom: 3px solid black;
+  width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -159,6 +162,7 @@ header {
 
 main {
   display: flex;
+  margin-top: 63px;
   flex: 1 0 auto;
   flex-direction: column;
   padding: 5px 5px;
