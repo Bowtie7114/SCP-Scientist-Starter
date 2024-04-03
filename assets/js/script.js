@@ -6,6 +6,7 @@ let loginLogo = document.getElementById('login-logo');
 let loginForm = document.getElementById('login-form');
 let disclaimer = document.getElementById('disclaimer');
 let opacity = 0;
+let username = '';
 
 function fadeAnimation(element) {
     let fadeIn = setInterval(() => {
@@ -30,7 +31,7 @@ document.addEventListener("click", function() {
  * Function completely hides the 'Login' button until the Username is entered and the passwords match
  */
 
-function PassCheck() {
+function passCheck() {
     var password = document.getElementById('password');
     var vpassword = document.getElementById('password2');
   
@@ -43,10 +44,15 @@ function PassCheck() {
   }
 
   document.addEventListener('input', function() {
-    PassCheck();
+    passCheck();
   })
 
   /**
    * The Username is stored within the function and then added to other parts of the site
    */
 
+function submit() {
+    username = document.getElementById('name').value;
+}
+
+document.getElementById('login-button').addEventListener("click", submit);
