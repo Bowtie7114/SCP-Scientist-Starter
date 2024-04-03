@@ -183,7 +183,9 @@ footer {
 
 /* Large or landscape phones */
 @media screen and (min-width: 576px) {
-
+  #logo {
+    padding-right: 20px;
+  }
 }
 
 /* Tablets and larger */
@@ -193,7 +195,7 @@ footer {
 
 /* Laptops and desktop screens */
 @media screen and (min-width: 992px) {
-
+  
 }
 
 /* Large screens */
