@@ -113,9 +113,11 @@ Final Page Mobile: <br>
 ### Lighthouse ###
 
 ### Functional ###
+
+### Bugs and Fixes ###
 - A separate scriptsheet was created specifically for the index page, index.js, to house the animation javascript code. It would run on other pages continuously as it was looking for elements that did not exist on those pages due to the eventhandler 
 allocated to it. Future attempts will work towards making it so that the separate page was not necessary.
-- Following on from the above - code was added on lines 1-9 of script.js that allows the page target from the URL to be shortened to just the html names (eg. index.html, welcome.html etc). I could then use if statements so that certain functions only worked on certain pages, preventing continuous loading where it was not needed.
+- Following on from the above - code was added on lines 1-5 of script.js that allows the page target from the URL to be shortened to just the html names (eg. index.html, welcome.html etc). I could then use if statements so that certain functions only worked on certain pages, preventing continuous loading where it was not needed.
 
 ## Deployment ##
 ### Version Control ###

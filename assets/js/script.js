@@ -1,12 +1,9 @@
 /**
  * Stores the current page name for use in if statements that prevent functions firing on pages they should not
  */
-var page = '';
+var path = window.location.pathname;
+var page = path.split("/").pop();
 
-document.addEventListener("DOMContentLoaded", function() {
-    var path = window.location.pathname;
-    page = path.split("/").pop();
-});
 
 /**
  * Fade in animation for index.html
@@ -88,3 +85,7 @@ function redirect() {
 /**
  * Username will be applied to the h1 element on welcome.html and the downloadable ID pass on congrats.html with this function
  */ 
+if (page === 'welcome.html') {
+    let welcomeTitle = document.getElementById('welcome-title');
+    welcomeTitle.innerHTML = `Welcome, ${username}`;
+}

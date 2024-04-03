@@ -162,6 +162,16 @@ header {
   font-size: 1.8em;
 }
 
+#welcome-title {
+  text-align: center;
+  padding-left: 19px;
+  padding-top: 9px;
+}
+
+#welcome-title h1 {
+  font-size: 1.8em;
+}
+
 #logo {
   padding-top: 5px;
   padding-right: 5px;
