@@ -113,6 +113,8 @@ Final Page Mobile: <br>
 ### Lighthouse ###
 
 ### Functional ###
+- A separate scriptsheet was created specifically for the index page, index.js, to house the animation javascript code. It would run on other pages continuously as it was looking for elements that did not exist on those pages due to the eventhandler 
+allocated to it. Future attempts will work towards making it so that the separate page was not necessary.
 
 ## Deployment ##
 ### Version Control ###
