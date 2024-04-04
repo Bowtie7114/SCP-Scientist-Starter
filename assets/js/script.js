@@ -71,6 +71,7 @@ function passCheck() {
 function submit() {
      var username = document.getElementById('name').value;
      sessionStorage.setItem('name', username);
+     sessionStorage.setItem('points', 0);
 }
 
 if (page === 'index.html' || page === '') {
@@ -90,8 +91,38 @@ function redirect() {
  * Username will be applied to the h1 element on welcome.html and the downloadable ID pass on congrats.html with this function
  * Some code used from Stack Overflow user mustafa abdelbadea, link in README.
  */ 
+
 if (page === 'welcome.html') {
     let welcomeTitle = document.getElementById('welcome-title');
     let username = sessionStorage.getItem("name");
     welcomeTitle.innerHTML = `Welcome, ${username}`;
 }
+
+/**
+ * Image of MalO on welcome.html should change, along with the caption, to an SCP Scientist and appropriate text,
+ * upon clicking the image
+ */
+
+function correctImage() {
+    var image = document.getElementById('MalO');
+    var caption = document.getElementById('MalO-text');
+    image.src =  'assets/images/Scientist.webp';
+    image.alt = 'An average, generic SCP Scientist that can be used as a placeholder or approximation of the User themselves.';
+    caption.innerHTML = "Figure 1: A rough approximation of you, an SCP Scientist.";
+    var points = parseInt(sessionStorage.getItem("points"));
+    if (points === 0) {
+        alert('1 out of 4 found.');
+        sessionStorage.setItem('points', 1)      
+    } 
+}
+
+/**
+ * This function resets the entire run - pressing F5 should refresh the session by loading index.html and
+ * clearing any and all cached information
+ * 
+ * function startOver() {
+ *  sessionStorage.clear();
+ * }
+ * 
+ * 
+ */
