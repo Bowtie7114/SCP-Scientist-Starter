@@ -8,16 +8,12 @@ var page = path.split("/").pop();
 
 /**
  * Fade in animation for index.html
- * Some code written by Diksha Patro, link in README.
+ * Initial code structure written by Diksha Patro, link in README.
  */
 
-let loginLogo = document.getElementById('login-logo');
-let loginForm = document.getElementById('login-form');
-let disclaimer = document.getElementById('disclaimer');
-let opacity = 0;
-
-function fadeAnimation(element) {
+function fadeAnimation(element, opacity) {
     let fadeIn = setInterval(() => {
+  
         if (opacity >= 1) {
             clearInterval(fadeIn);
         }
@@ -28,8 +24,10 @@ function fadeAnimation(element) {
 
 document.addEventListener("DOMContentLoaded", function() {
     if (page === 'index.html' || page === '') {
-        fadeAnimation(loginLogo);
-        fadeAnimation(loginForm);
+        var loginLogo = document.getElementById('login-logo');
+        var loginForm = document.getElementById('login-form');
+        fadeAnimation(loginLogo, 0);
+        fadeAnimation(loginForm, 0);
     }
     var points = parseInt(sessionStorage.getItem("points"));
     if (points === 3 && page == 'breaches.html'){
@@ -37,9 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+var clicks = 0;
 document.addEventListener("click", function() {
     if (page === 'index.html' || page === '') {
-        fadeAnimation(disclaimer);
+        if (clicks === 0) {        
+            var disclaimer = document.getElementById('disclaimer');
+            fadeAnimation(disclaimer, 0);
+            clicks = 1;
+        }   
     }
 })
 
@@ -117,7 +120,7 @@ function correctImage() {
     var points = parseInt(sessionStorage.getItem("points"));
     if (points === 0) {
         alert('1 out of 4 found.');
-        sessionStorage.setItem('points', 1)      
+        sessionStorage.setItem('points', 1);      
     } 
 }
 
@@ -133,10 +136,10 @@ function correctDescription(answer) {
         var points = parseInt(sessionStorage.getItem("points"));
         if (points === 1) {
             alert('2 out of 4 found.');
-            sessionStorage.setItem('points', 2)     
+            sessionStorage.setItem('points', 2);     
         }
     } else {
-        alert("Issue not detected, closing help menu.")
+        alert("Issue not detected, closing help menu.");
     }
     document.getElementById("help-toggle").style.display = "none";
     document.getElementById("help-form").style.display = "none";
@@ -153,7 +156,7 @@ function correctLetter() {
     var points = parseInt(sessionStorage.getItem("points"));
     if (points === 2) {
         alert('3 out of 4 found.');
-        sessionStorage.setItem('points', 3)     
+        sessionStorage.setItem('points', 3);     
     }    
 }
 
@@ -161,15 +164,37 @@ function correctLetter() {
  * Captcha images should appear randomly out of 4 once function is called (event listener at top of scriptsheet).
  */
 
+var captchaValue = '';
+
 function correctCaptcha() {
     images = ['assets/images/captcha1.webp', 'assets/images/captcha2.webp', 'assets/images/captcha3.webp', 'assets/images/captcha4.webp'];
-    alts = ['Foxtrot Oscar Romeo Kilo Lima Indigo Foxtrot Tango', 'Sierra Echo Charlie Uniform Romeo Echo', 'Papa Romeo Oscar Tango Echo Charlie Tango', 'Charlie Oscar November Tango Alpha Indigo November']
+    alts = ['Foxtrot Oscar Romeo Kilo Lima Indigo Foxtrot Tango', 'Sierra Echo Charlie Uniform Romeo Echo', 'Papa Romeo Oscar Tango Echo Charlie Tango', 'Charlie Oscar November Tango Alpha Indigo November'];
+    answers = ['forklift', 'secure', 'protect', 'contain'];
     var index = Math.floor(Math.random() * 4);
     var image = document.getElementById('captcha-image');
     
     image.src = images[index];
     image.alt = alts[index];
     image.ariaLabel = alts[index];
+    captchaValue = answers[index];
+}
+
+/**
+ * Final counting upwards function, once the Captcha has been noted as correct. To prevent User from making innocent mistakes, entered text is set to lowercase in
+ * the backend before being compared.
+ */
+
+function captchaCheck() {
+    var attempt = document.getElementById('captcha-text').value.toLowerCase();
+    if (captchaValue === attempt) {
+        var points = parseInt(sessionStorage.getItem("points"));
+        if (points === 3) {
+            alert('4 out of 4 found.');
+            sessionStorage.setItem('points', 4);
+            var link = document.getElementById('breach-button');
+            link.href = "secret.html";     
+        }
+    }
 }
 
 /**
