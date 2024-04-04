@@ -118,6 +118,28 @@ function correctImage() {
 }
 
 /**
+ * Description of SCP-106 will be changed once the correct description on the help menu is selected, and the couunter will continue. If an incorrect one is selected,
+ * the description does not change, User is alerted, and they are locked out from the remaining interactions.
+ */
+
+function correctDescription(answer) {
+    if (answer === 'answer2') {
+        var caption = document.getElementById('106-text');
+        caption.innerHTML = "Image of SCP-106, mid-emerging from his pocket dimension<sup>[4]</sup>"; 
+        var points = parseInt(sessionStorage.getItem("points"));
+        if (points === 1) {
+            alert('2 out of 4 found.');
+            sessionStorage.setItem('points', 2)     
+        }
+    } else {
+        alert("Issue not detected, closing help menu.")
+    }
+    document.getElementById("help-toggle").style.display = "none";
+    document.getElementById("help-form").style.display = "none";
+    document.getElementById("help-toggle-label").style.display = "none";
+}
+
+/**
  * This function resets the entire run - pressing F5 should refresh the session by loading index.html and
  * clearing any and all cached information
  * 

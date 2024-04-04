@@ -103,22 +103,22 @@
             </p>
             <figure>
                 <img src="assets/images/106.webp" alt="Image of SCP-106 re-appearing from his pocket dimension">
-                <figcaption>Image of SCP-106, mid-emerging from his pocket dimension<sup>[4]</sup></figcaption>
+                <figcaption id="106-text">Image of SCP-682, engorging multiple MTF members during containment breach<sup>[5]</sup></figcaption>
             </figure>
         </div>
         <div id="next-page">
             <button><a href="responsibilities.html">Next page</a></button>
         </div>
         <div id="help">
-            <label for="help-toggle" class="help-toggle-label" aria-label="Help button. Select to open help menu"><i class="fa-solid fa-question"></i></label>
+            <label for="help-toggle" id="help-toggle-label" aria-label="Help button. Select to open help menu"><i class="fa-solid fa-question"></i></label>
             <input type="checkbox" id="help-toggle" name="help-toggle">
             <form id="help-form">
                 <ul id="help-menu">
                   <li>Please select an issue:</li>
-                  <li>Incorrect SCP displaying</li>
-                  <li>Incorrect SCP description</li>
-                  <li>Dr. Bright is shown</li>
-                  <li>Photo of SCP-096 shown</li>
+                  <li id="answer1" onclick="correctDescription('answer1')">Incorrect SCP displaying</li>
+                  <li id="answer2" onclick="correctDescription('answer2')">Incorrect SCP description</li>
+                  <li id="answer3" onclick="correctDescription('answer3')">Dr. Bright is shown</li>
+                  <li id="answer4" onclick="correctDescription('answer4')">Photo of SCP-096 shown</li>
                 </ul>          
             </form>            
         </div>
@@ -133,6 +133,7 @@
         <p>* An actual picture of SCP-999 could not be taken as it would continuously tickle and play with the photographer. Approximation used instead.</p>
         <p>3. Information related to <a href="https://scp-wiki.wikidot.com/scp-847">SCP-156 found here.</a></p>
         <p>4. Information related to <a href="https://scp-wiki.wikidot.com/scp-106">SCP-106 found here.</a></p>
+        <p>5. Information related to <a href="https://scp-wiki.wikidot.com/scp-682">SCP-682 found here.</a></p>
     </footer>
 
     <!-- Font Awesome and external JS Sheet-->

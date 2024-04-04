@@ -243,7 +243,7 @@ main {
   display: none;
 }
 
-.help-toggle-label {
+#help-toggle-label {
   font-size: 2rem;
   padding: 0 .6rem;
   color: #ffffff;
