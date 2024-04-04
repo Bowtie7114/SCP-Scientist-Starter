@@ -259,11 +259,19 @@ main {
 
 /* Breaches page */
 
+#captcha-text {
+  display: none;
+}
+
+#captcha-submit {
+  display: none;
+}
+
 /* Secret page */
 
 #killswitch {
   height: auto;
-  width: 100%;
+  width: 80%;
 }
 
 /* Congrats page */

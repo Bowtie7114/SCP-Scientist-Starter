@@ -168,7 +168,7 @@ A site can be deployed to GitHub Pages by:
 
 ### Media ### 
 - SCP Logo taken directly from the [SCP Foundation site](http://scp-int.wikidot.com/).
-- Fiancé [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site.
+- Fiancé [Magdalena](https://github.com/Madzikdek) for creating the favicon for this site and for making the four Captcha images used on breaches.html.
 - SCP Scientist from the game SCP: Secret Laboratory, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/Scientist).
 - Image of SCP-914, The Clockworks, from the game SCP: Secret Laboratory, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/SCP-914).
 - Image of a plushie SCP-999, The Tickle Monster, taken from the [Plushy Factory Website](https://plushfoundry.com/products/scp-999-tickle-monster).

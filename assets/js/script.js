@@ -173,6 +173,9 @@ function correctCaptcha() {
     var index = Math.floor(Math.random() * 4);
     var image = document.getElementById('captcha-image');
     
+    document.getElementById("captcha-text").style.display = "initial";
+    document.getElementById("captcha-submit").style.display = "initial";
+
     image.src = images[index];
     image.alt = alts[index];
     image.ariaLabel = alts[index];
