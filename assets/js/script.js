@@ -26,17 +26,14 @@ function fadeAnimation(element) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (page === 'index.html') {
+    if (page === 'index.html' || page === '') {
         fadeAnimation(loginLogo);
         fadeAnimation(loginForm);
-        console.log(page);
-    } else {
-        console.log(page);
     }
 });
 
 document.addEventListener("click", function() {
-    if (page === 'index.html') {
+    if (page === 'index.html' || page === '') {
         fadeAnimation(disclaimer);
     }
 })
@@ -60,7 +57,7 @@ function passCheck() {
   }
 
   document.addEventListener('input', function() {
-    if (page = 'index.html') {
+    if (page = 'index.html' || page === '') {
         passCheck();
     }
   })
@@ -73,7 +70,7 @@ function submit() {
     username = document.getElementById('name').value;
 }
 
-if (page === 'index.html') {
+if (page === 'index.html' || page === '') {
     document.getElementById('login-button').addEventListener("click", submit);
 };
 
