@@ -1,5 +1,6 @@
 /**
  * Stores the current page name for use in if statements that prevent functions firing on pages they should not
+ * 
  */
 var path = window.location.pathname;
 var page = path.split("/").pop();
@@ -7,13 +8,13 @@ var page = path.split("/").pop();
 
 /**
  * Fade in animation for index.html
+ * Some code written by Diksha Patro, link in README.
  */
 
 let loginLogo = document.getElementById('login-logo');
 let loginForm = document.getElementById('login-form');
 let disclaimer = document.getElementById('disclaimer');
 let opacity = 0;
-let username = '';
 
 function fadeAnimation(element) {
     let fadeIn = setInterval(() => {
@@ -64,22 +65,21 @@ function passCheck() {
 
   /**
    * The Username is stored within the function and should be written to user.txt
+   * Some code used from Stack Overflow user mustafa abdelbadea, link in README.
    */
 
 function submit() {
-    username = document.getElementById('name').value;
-    
+     var username = document.getElementById('name').value;
+     sessionStorage.setItem('name', username);
 }
 
 if (page === 'index.html' || page === '') {
     document.getElementById('login-button').addEventListener("click", submit);
 };
 
-
-
-
 /**
  *  Function links index.html to welcome.html via the sign in button once it is active.
+ *  Code used found in Geeks for Geeks article, linked in README.
  */
 
 function redirect() {
@@ -88,8 +88,10 @@ function redirect() {
 
 /**
  * Username will be applied to the h1 element on welcome.html and the downloadable ID pass on congrats.html with this function
+ * Some code used from Stack Overflow user mustafa abdelbadea, link in README.
  */ 
 if (page === 'welcome.html') {
     let welcomeTitle = document.getElementById('welcome-title');
+    let username = sessionStorage.getItem("name");
     welcomeTitle.innerHTML = `Welcome, ${username}`;
 }

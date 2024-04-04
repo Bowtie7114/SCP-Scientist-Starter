@@ -71,7 +71,7 @@ header {
   flex-direction: row;
 }
 
-/* Burger animation CSS */
+/* Burger animation CSS, from Alvaro Trigo, link in README */
 
 #menu__toggle {
   opacity: 0;
