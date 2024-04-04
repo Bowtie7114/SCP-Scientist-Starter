@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (page === 'index.html') {
         fadeAnimation(loginLogo);
         fadeAnimation(loginForm);
+        console.log(page);
+    } else {
+        console.log(page);
     }
 });
 
@@ -40,7 +43,7 @@ document.addEventListener("click", function() {
 
 
 /** 
- * Function completely hides the 'Login' button until the Username is entered and the passwords match
+ * Function disables the 'Login' button until the Username is entered and the passwords match
  */
 
 function passCheck() {
@@ -63,7 +66,7 @@ function passCheck() {
   })
 
   /**
-   * The Username is stored within the function and then added to other parts of the site
+   * The Username is stored within the function and should be written to user.txt
    */
 
 function submit() {
@@ -73,6 +76,9 @@ function submit() {
 if (page === 'index.html') {
     document.getElementById('login-button').addEventListener("click", submit);
 };
+
+
+
 
 /**
  *  Function links index.html to welcome.html via the sign in button once it is active.
