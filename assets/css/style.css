@@ -253,6 +253,10 @@ main {
 
 /* Responsibilities page */
 
+#wrong-letter {
+  cursor: pointer;
+}
+
 /* Breaches page */
 
 /* Secret page */
