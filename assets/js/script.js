@@ -140,6 +140,20 @@ function correctDescription(answer) {
 }
 
 /**
+ * One letter within the Meetings paragraph in responsibilities.html will change once the User clicks on it. It will also tick the stored number to three.
+ */
+
+function correctLetter() {
+    var letter = document.getElementById('wrong-letter');
+        letter.innerHTML = "e";
+    var points = parseInt(sessionStorage.getItem("points"));
+    if (points === 2) {
+        alert('3 out of 4 found.');
+        sessionStorage.setItem('points', 3)     
+    }    
+}
+
+/**
  * This function resets the entire run - pressing F5 should refresh the session by loading index.html and
  * clearing any and all cached information
  * 
