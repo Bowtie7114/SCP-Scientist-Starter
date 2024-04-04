@@ -68,6 +68,7 @@ function passCheck() {
 
 function submit() {
     username = document.getElementById('name').value;
+    
 }
 
 if (page === 'index.html' || page === '') {

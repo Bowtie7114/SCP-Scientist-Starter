@@ -119,6 +119,8 @@ Final Page Mobile: <br>
 allocated to it. Future attempts will work towards making it so that the separate page was not necessary.
 - Following on from the above - code was added on lines 1-5 of script.js that allows the page target from the URL to be shortened to just the html names (eg. index.html, welcome.html etc). I could then use if statements so that certain functions only worked on certain pages, preventing continuous loading where it was not needed.
 
+- When opening the python3 server the day after creating the fade animation, it ceased to work. This was because the if statement was checking for index.html, which did not appear on the end of the page URL when first loading, it appeared as an empty string. By adding the empty string as an or ( || ) to the if statement, it began to function as normal.
+
 ## Deployment ##
 ### Version Control ###
 
