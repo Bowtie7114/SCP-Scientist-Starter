@@ -153,6 +153,7 @@ A site can be deployed to GitHub Pages by:
 - Redirect using JavaScript code from [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-redirect-to-another-webpage-using-javascript/), used on 'Sign In' button on index.html.
 - Code to snip the end of a URL used from [Stack Overflow user mustafa abdelbadea](https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript).
 - JS code to store data per sessions from [Stack Overflow user mustafa abdelbadea](https://stackoverflow.com/questions/74817309/how-do-i-store-the-content-of-a-variable-for-later-use-in-other-function-javasc).
+- JS code to change image used on welcome.html from [Basedash](https://www.basedash.com/blog/how-to-change-an-image-src-with-javascript).
 
 #### SCP Foundation Wiki URLs ####
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.

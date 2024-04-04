@@ -100,7 +100,8 @@ if (page === 'welcome.html') {
 
 /**
  * Image of MalO on welcome.html should change, along with the caption, to an SCP Scientist and appropriate text,
- * upon clicking the image
+ * upon clicking the image. Also contains the beginning of the code that counts the interactions on the navable pages.
+ * Some code used came from an article on Basedash.com, link in README.
  */
 
 function correctImage() {
