@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
         fadeAnimation(loginLogo);
         fadeAnimation(loginForm);
     }
+    var points = parseInt(sessionStorage.getItem("points"));
+    if (points === 3 && page == 'breaches.html'){
+        correctCaptcha();
+    }
 });
 
 document.addEventListener("click", function() {
@@ -151,6 +155,21 @@ function correctLetter() {
         alert('3 out of 4 found.');
         sessionStorage.setItem('points', 3)     
     }    
+}
+
+/**
+ * Captcha images should appear randomly out of 4 once function is called (event listener at top of scriptsheet).
+ */
+
+function correctCaptcha() {
+    images = ['assets/images/captcha1.webp', 'assets/images/captcha2.webp', 'assets/images/captcha3.webp', 'assets/images/captcha4.webp'];
+    alts = ['Foxtrot Oscar Romeo Kilo Lima Indigo Foxtrot Tango', 'Sierra Echo Charlie Uniform Romeo Echo', 'Papa Romeo Oscar Tango Echo Charlie Tango', 'Charlie Oscar November Tango Alpha Indigo November']
+    var index = Math.floor(Math.random() * 4);
+    var image = document.getElementById('captcha-image');
+    
+    image.src = images[index];
+    image.alt = alts[index];
+    image.ariaLabel = alts[index];
 }
 
 /**
