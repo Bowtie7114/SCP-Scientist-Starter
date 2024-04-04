@@ -206,6 +206,51 @@ main {
 
 }
 
+#help {
+  
+}
+
+/* Navbar styles and dropdown */
+#help-form {
+  position: fixed;
+  font-size: 1.5em;
+  top: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #030303;
+  display: none;
+}
+
+#help-form ul {
+  list-style-type: none;
+  letter-spacing: 1px;
+}
+
+#help-menu > li {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Help menu toggle */
+#help-toggle:checked~form {
+  display: block;
+}
+
+#help-toggle {
+  display: none;
+}
+
+.help-toggle-label {
+  font-size: 2rem;
+  padding: 0 .6rem;
+  color: #ffffff;
+  border-radius: 25%;
+  background-color: #030303;
+}
+
 /* Responsibilities page */
 
 /* Breaches page */
