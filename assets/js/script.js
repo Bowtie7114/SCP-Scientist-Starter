@@ -82,7 +82,7 @@ function submit() {
 }
 
 if (page === 'index.html' || page === '') {
-    document.getElementById('login-button').addEventListener("click", submit);
+    document.getElementById('login-button').addEventListener("click", submit);   
 };
 
 /**
@@ -203,9 +203,11 @@ function captchaCheck() {
 /**
  * This function resets the entire run - pressing F5 should refresh the session by loading index.html and
  * clearing any and all cached information
- */
+ *
 document.addEventListener("keydown", (e) => {
     if (e.key === 'F5') {
         sessionStorage.clear();        
     }
 });
+
+*/

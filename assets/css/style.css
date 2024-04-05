@@ -77,6 +77,7 @@ a {
 
 #login-form input {
   border: 1px solid #030303;
+  text-align: center;
 }
 
 #login-button {
@@ -90,6 +91,7 @@ a {
 
 #disclaimer {
   opacity: 0;
+  width: 80%;
 }
 
 /* Header */
@@ -195,10 +197,6 @@ header {
   font-size: 1.8em;
 }
 
-#welcome-title h1 {
-  font-size: 1.8em;
-}
-
 #logo {
   padding-top: 5px;
   padding-right: 5px;
@@ -216,21 +214,54 @@ main {
   margin-top: 63px;
   flex: 1 0 auto;
   flex-direction: column;
-  padding: 5px 5px;
+  padding: 8px 8px;
 }
 
 /* Welcome page */
 
 #reference-image {
-
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #MalO {
   cursor: pointer;
+  height: auto;
+  width: 100%;
+}
+
+#MalO-figure {
+  width: 80%;
+  border: 2px solid #030303;
+}
+
+#MalO-text {
+  font-size: 0.8em;
+}
+
+#welcome-div2 h2, #welcome-div2 p {
+  padding-bottom: .5em;
 }
 
 #next-page {
+  align-self: flex-end;
+}
 
+#next-page-button {
+  font-family: 'Inter', Arial, sans-serif;
+  height: 2em;
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid #030303;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#next-page-button a {
+  text-decoration: none;
+  color: #030303;
 }
 
 /* SCPs page */
@@ -243,7 +274,7 @@ main {
   
 }
 
-/* Navbar styles and dropdown */
+/* Help form style and appearance */
 #help-form {
   position: fixed;
   font-size: 1.5em;
@@ -355,6 +386,11 @@ footer {
 
 /* Tablets and larger */
 @media screen and (min-width: 768px) {
+
+  #MalO {
+    width: 600px;
+    height: auto;
+  }
 
 }
 
