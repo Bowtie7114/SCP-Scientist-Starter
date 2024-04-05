@@ -1,4 +1,9 @@
-# SCP Scientist Orientation (Working Title) #
+# SCP Scientist Orientation #
+The SCP Scientist Orientation is an interactive website in which the user takes a mostly-guided tour through an orientation process for a new Level 2 Scientist working at the fictional SCP Foundation. <br>
+The purposefully sterile look of the site should belay the overall feel of the Foundation compared to what they do, with descriptions and images of protocols and SCPs, and links in the footnotes to the main source of information for them.<br><br>
+
+The site's intended audience is those who are familiar with the SCP Foundation and enjoy perusing the non-canon content on offer, as well as those not massively familiar with the Foundation, <br>
+as a way to stoke curiosity, with many links, images, and references to the main site to allow them to explore further.
 
 ## Features ##
 
