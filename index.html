@@ -23,16 +23,16 @@
                 <img src="assets/images/SCP_logo.webp" id="SCP-logo" alt="SCP logo"><br>
                 <h2>Secure. Contain. Protect.</h2>
             </div>
-            <div>
+            <div id="login-form-div">
                 <form id="login-form">
                     <h3>Please enter your Username and a memorable Password.</h3>
                     <p>Your password must be at least 8 characters long.</p>
-                    <label for="name">Username</label>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" minlength="8" required><br>
-                    <label for="password2">Re-enter Password</label>
-                    <input type="password" id="password2" name="password2" minlength="8" required><br><br>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Username" required><br>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" minlength="8" placeholder="Password" required><br>
+                    <label for="password2"></label>
+                    <input type="password" id="password2" name="password2" minlength="8" placeholder="Confirm Password" required><br><br>
                     <button type="button" id="login-button" onclick="redirect()" disabled>Sign In</button>
                 </form>
             </div>

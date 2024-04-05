@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -66,11 +66,26 @@ a {
 
 #login-form {
   opacity: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+#login-form h3, #login-form p {
+  padding-bottom: 1em;
+}
+
+#login-form input {
+  border: 1px solid #030303;
 }
 
 #login-button {
+  font-family: 'Inter', Arial, sans-serif;
+  height: 2em;
   width: 30%;
   align-self: center;
+  cursor: pointer;
+  border: 1px solid #030303;
 }
 
 #disclaimer {
