@@ -246,6 +246,7 @@ main {
 }
 
 #next-page {
+  padding-top: 5px;
   align-self: flex-end;
 }
 
@@ -266,8 +267,25 @@ main {
 
 /* SCPs page */
 
-#SCP-info {
+.SCP-info {
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
 
+.SCP-info p {
+  padding-bottom: 3px;
+}
+
+.SCP-figure {
+  width: 80%;
+  border: 2px solid #030303;
+}
+
+.SCP-image {
+  width: 100%;
+  height: auto;
 }
 
 #help {
@@ -309,10 +327,11 @@ main {
 
 #help-toggle-label {
   font-size: 2rem;
-  padding: 0 .6rem;
+  padding: .4rem .6rem;
   color: #ffffff;
   border-radius: 25%;
   background-color: #030303;
+  cursor: pointer;
 }
 
 /* Responsibilities page */

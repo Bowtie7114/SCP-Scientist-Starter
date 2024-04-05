@@ -7,7 +7,7 @@ var page = path.split("/").pop();
 
 
 /**
- * Fade in animation for index.html
+ * Fade in animation for index.html. DOMContentLoaded listener also triggers on the breaches.html page if the User has three points saved, triggering correctCaptchs().
  * Initial code structure written by Diksha Patro, link in README.
  */
 
@@ -138,6 +138,8 @@ function correctDescription(answer) {
             alert('2 out of 4 found.');
             sessionStorage.setItem('points', 2);     
         }
+    } else if (answer === 'answer4') {
+        alert("Issue not detected, closing help menu. Your next of kin shall be notified.")
     } else {
         alert("Issue not detected, closing help menu.");
     }

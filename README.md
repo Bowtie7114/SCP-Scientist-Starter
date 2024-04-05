@@ -164,6 +164,7 @@ A site can be deployed to GitHub Pages by:
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
 - [SCP-006](https://scp-wiki.wikidot.com/scp-006), the Fountain of Youth, used in the O5 exclusive page, secret.html
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
+- [SCP-096](https://scp-wiki.wikidot.com/scp-096), the Shy Guy, mentioned in help menu in scps.html.
 - [SCP-106](https://scp-wiki.wikidot.com/scp-106), the Old Man, used as one of the SCPs assigned to the User.
 - [SCP-682](https://scp-wiki.wikidot.com/scp-682), the Hard-to-kill Reptile, used as an incorrect description on scps.html.
 - [SCP-847](https://scp-wiki.wikidot.com/scp-847), The Mannequin, used as one of the SCPs assigned to the User.
