@@ -367,6 +367,7 @@ main {
 
 #wrong-letter {
   cursor: pointer;
+  font-style: italic;
 }
 
 /* Breaches page */
@@ -377,6 +378,12 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 0.8em;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.threats figure {
+  margin-bottom: 1em;
 }
 
 .empty {
@@ -660,9 +667,8 @@ footer a {
   .SCP-info p {
     width: 90%;
   }
-  
-  /* Clear floats after the columns */
-  .row2:after {
+
+  .row:after {
     content: "";
     display: table;
     clear: both;
@@ -677,6 +683,30 @@ footer a {
   }
 
   /* Breaches page */
+
+  .threats {
+    margin-left: 0%;
+  }
+
+  .information.column2 {
+    float: left;
+    width: 33%;
+  }
+
+  .threats.column2 {
+    float: left;
+    width: 33%;
+  }
+
+  #captcha-image {
+    width: 70%;
+  }
+
+  #captcha {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+  }
 
   /* Secret page */
 

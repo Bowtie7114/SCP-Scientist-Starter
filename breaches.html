@@ -40,46 +40,52 @@
     </header>
 
     <main>
-        <div class="information">
-            <h2>What to do in the event of a Containment Breach from a Euclid/Keter-Class Anomaly:</h2>
-            <p>There are numerous Euclid and Keter-Class anomalies housed at Site-<span class="redacted">##</span> that you will not work with but that may still break containment.<br>
-               It is important in these instances to remain calm and, if you see an anomaly and the alarm is not raised, to raise it, whilst being careful not to succumb to the anomaly yourself.<br>
-               For example, SCP-096 and SCP-173: Do NOT look at SCP-096, and DO look at SCP-173. You will find more information on these anomalies at a later date.</p>            
+        <div class="row">
+            <div class="information column2">
+                <h2>What to do in the event of a Containment Breach from a Euclid/Keter-Class Anomaly:</h2>
+                <p>There are numerous Euclid and Keter-Class anomalies housed at Site-<span class="redacted">##</span> that you will not work with but that may still break containment.<br>
+                It is important in these instances to remain calm and, if you see an anomaly and the alarm is not raised, to raise it, whilst being careful not to succumb to the anomaly yourself.<br>
+                For example, SCP-096 and SCP-173: Do NOT look at SCP-096, and DO look at SCP-173. You will find more information on these anomalies at a later date.</p>            
+            </div>
+            <div class="threats column2">
+                <figure class="SCP-figure">
+                    <img src="assets/images/096.webp" class="SCP-image" alt="SCP-096 with its face covered as to not trigger its effect.">
+                    <figcaption>SCP-096, with its face obscured to protect you from its anomalous effect.<sup>[1][1a]</sup></figcaption>
+                </figure>
+            </div>
+            <div class="threats column2">
+                <figure class="SCP-figure">
+                    <img src="assets/images/173.webp" class="SCP-image" alt="An image of SCP-173">
+                    <figcaption>SCP-173. Ensure you stare at it if it is not in its containment cell.<sup>[2]</sup></figcaption>
+                </figure>            
+            </div>
         </div>
-        <div class="threats">
-            <figure class="SCP-figure">
-                <img src="assets/images/096.webp" class="SCP-image" alt="SCP-096 with its face covered as to not trigger its effect.">
-                <figcaption>SCP-096, with its face obscured to protect you from its anomalous effect.<sup>[1][1a]</sup></figcaption>
-            </figure>
-            <span class="empty"></span>
-            <figure class="SCP-figure">
-                <img src="assets/images/173.webp" class="SCP-image" alt="An image of SCP-173">
-                <figcaption>SCP-173. Ensure you stare at it if it is not in its containment cell.<sup>[2]</sup></figcaption>
-            </figure>            
+        <div class="row">
+            <div class="information column2">
+                <h2>What to do in the event of a Containment Breach by an outside organisation:</h2>
+                <p>There are outside organisations and entities that wish to obtain information, free/capture contained SCPs, or generally destroy the Foundation itself.<br>
+                The Chaos Insurgency, the Children of the <span class="redacted">Scarlet King</span>, The Occult Coalition - just to name a few. If you notice anyone within the Foundation uttering
+                strange chants, talking in unrecognised code, or indiscriminately shouting "CHAOS", report them immediately.<br> Depending on the situation, it may be necessary to invoke Alpha Protocol,
+                but this will be covered at a later date. </p>
+            </div>
+            <div class="threats column2">
+                <figure class="SCP-figure">
+                    <img src="assets/images/insurgent.webp" class="SCP-image" alt="A Chaos Insurgency soldier.">
+                    <figcaption><sup>A Chaos Insurgent footsoldier[3]</sup></figcaption>
+                </figure>
+            </div>
+            <div class="threats column2">
+                <figure class="SCP-figure">
+                    <img src="assets/images/warhead.webp" class="SCP-image" alt="Image of the Alpha Warhead in Heavy Containment.">
+                    <figcaption>The Alpha Warhead<sup>[4]</sup></figcaption>
+                </figure> 
+            </div>
         </div>
-        <div class="information">
-            <h2>What to do in the event of a Containment Breach by an outside organisation:</h2>
-            <p>There are outside organisations and entities that wish to obtain information, free/capture contained SCPs, or generally destroy the Foundation itself.<br>
-               The Chaos Insurgency, the Children of the <span class="redacted">Scarlet King</span>, The Occult Coalition - just to name a few. If you notice anyone within the Foundation uttering
-               strange chants, talking in unrecognised code, or indiscriminately shouting "CHAOS", report them immediately.<br> Depending on the situation, it may be necessary to invoke Alpha Protocol,
-               but this will be covered at a later date. </p>
-        </div>
-        <div class="threats">
-            <figure class="SCP-figure">
-                <img src="assets/images/insurgent.webp" class="SCP-image" alt="A Chaos Insurgency soldier.">
-                <figcaption><sup>A Chaos Insurgent footsoldier[3]</sup></figcaption>
-            </figure>
-            <span class="empty"></span>
-            <figure class="SCP-figure">
-                <img src="assets/images/warhead.webp" class="SCP-image" alt="Image of the Alpha Warhead in Heavy Containment.">
-                <figcaption>The Alpha Warhead<sup>[4]</sup></figcaption>
-            </figure> 
-        </div>
-        <div id="captcha">
-            <img src="" id="captcha-image" alt="">
-            <input type="text" placeholder="Type Captcha" id="captcha-text">
-            <button id="captcha-submit" onclick="captchaCheck()">Submit Captcha</button>
-        </div>
+            <div id="captcha">
+                <img src="" id="captcha-image" alt="">
+                <input type="text" placeholder="Type Captcha" id="captcha-text">
+                <button id="captcha-submit" onclick="captchaCheck()">Submit Captcha</button>
+            </div>
         <div id="next-page">
             <button id="next-page-button"><a href="congrats.html"  id="breach-button">Next page</a></button>
         </div>

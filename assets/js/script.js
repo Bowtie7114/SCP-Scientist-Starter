@@ -174,6 +174,7 @@ function correctDescription(answer) {
 function correctLetter() {
     var letter = document.getElementById('wrong-letter');
         letter.innerHTML = "e";
+        letter.style.fontStyle = "initial";
     var points = parseInt(sessionStorage.getItem("points"));
     if (points === 2) {
         alert('3 out of 4 found.');
