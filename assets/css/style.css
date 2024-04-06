@@ -44,7 +44,7 @@ a {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 1.5em 1.5em;
+  padding: 1.5em;
 }
 
 #SCP-logo {
@@ -215,6 +215,11 @@ main {
   flex: 1 0 auto;
   flex-direction: column;
   padding: 8px 8px;
+}
+
+#index {
+  margin-top: 0px;
+  padding: 0px 8px;
 }
 
 /* Welcome page */
@@ -552,6 +557,19 @@ footer a {
 /* Tablets and larger */
 @media screen and (min-width: 768px) {
 
+  #login {
+    padding: 0 1.5em 3em;
+  }
+
+  #SCP-logo {
+    width: 50%;
+  }
+
+  #login-form input {
+    font-size: 1em;
+    margin-bottom: 3px;
+  }
+
   #MalO {
     width: 600px;
     height: auto;
@@ -561,6 +579,12 @@ footer a {
 
 /* Laptops and desktop screens */
 @media screen and (min-width: 992px) {
+
+  #login-form {
+    font-size: 1.1em;
+  }
+  
+
   #help-menu {
     top: 50%;
     right: 50%;
