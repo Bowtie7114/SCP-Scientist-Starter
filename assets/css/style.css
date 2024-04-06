@@ -296,6 +296,10 @@ main {
   box-shadow: 0 1px 6px rgba(0,0,0,.25);
 }
 
+.SCP-figure figcaption {
+  padding-left: 4px;
+}
+
 .SCP-image {
   width: 100%;
   height: auto;
@@ -573,14 +577,14 @@ footer a {
 /* Tablets and larger */
 @media screen and (min-width: 768px) {
 
+  /* Login page */
+
   #login-form input {
     font-size: 1em;
     margin-bottom: 3px;
   }
 
-  #welcome-page {
-    column-count: 2;
-  }
+  /* Welcome page */
 
   #welcome-div1 {
     width: 50%;
@@ -608,6 +612,25 @@ footer a {
     width: 60%;
   }
 
+  /* SCPs page */
+
+  #note {
+    text-align: center;
+  }
+
+  /* Breaches page */
+
+  /* Secret page */
+
+  /* Congrats page */
+
+  /* 404 page */
+
+
+  footer p {
+    font-size: 0.8em;
+  }
+
 }
 
 /* Laptops and desktop screens */
@@ -616,14 +639,54 @@ footer a {
   #login-form {
     font-size: 1.1em;
   }
+
+  /* Welcome page */
   
   #MalO-figure {
     width: 40%;
   }
 
-  #help-menu {
-    top: 50%;
-    right: 50%;
+  /* SCPs page */
+
+  .SCP-info.column2 {
+    float: left;
+    width: 48%;
+  }
+
+  .SCP-info {
+    font-size: 1em;
+  }
+
+  .SCP-info p {
+    width: 90%;
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsibilitiess page */
+
+  #help-form {
+    top: 40%;
+    right: 40%;
+    font-size: 1.8em;
+  }
+
+  /* Breaches page */
+
+  /* Secret page */
+
+  /* Congrats page */
+
+  /* 404 page */
+
+
+  footer p {
+    font-size: 0.9em;
   }
 }
 
