@@ -367,12 +367,38 @@ main {
   padding: 5px 5px;
 }
 
+#captcha {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#captcha-image {
+  width: 100%;
+}
+
 #captcha-text {
+  width: 40%;
   display: none;
+  align-self: flex-start;
+  border: 1px solid #030303;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
 }
 
 #captcha-submit {
+  width: 40%;
   display: none;
+  align-self: flex-end;
+  font-family: 'Inter', Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid #030303;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 /* Secret page */
