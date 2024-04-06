@@ -461,6 +461,42 @@ main {
 
 /* Congrats page */
 
+#id {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#id-card {
+  width: 80%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #030303;
+  border-radius: 3%;
+}
+
+#download {
+  font-family: 'Inter', Arial, sans-serif;
+  height: 2em;
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid #030303;
+  padding: 3px;
+}
+
+#download a {
+  text-decoration: none;
+  color: #030303;
+}
+
+#conclusion {
+  padding-bottom: 2em;
+}
+
 /* 404 */
 
 #error {
