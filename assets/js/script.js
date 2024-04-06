@@ -132,6 +132,8 @@ function correctImage() {
     var image = document.getElementById('MalO');
     var caption = document.getElementById('MalO-text');
     image.src =  'assets/images/Scientist.webp';
+    image.style.height = '476px';
+    image.style.width = '150px';
     image.alt = 'An average, generic SCP Scientist that can be used as a placeholder or approximation of the User themselves.';
     caption.innerHTML = "Figure 1: A rough approximation of you, an SCP Scientist.";
     var points = parseInt(sessionStorage.getItem("points"));

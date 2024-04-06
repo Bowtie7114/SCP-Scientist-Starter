@@ -214,7 +214,7 @@ main {
   margin-top: 63px;
   flex: 1 0 auto;
   flex-direction: column;
-  padding: 8px 8px;
+  padding: 8px 10px;
 }
 
 #index {
@@ -223,6 +223,10 @@ main {
 }
 
 /* Welcome page */
+
+#welcome-div1 {
+  margin: 0 5px;
+}
 
 #reference-image {
   display: flex;
@@ -240,6 +244,9 @@ main {
 #MalO-figure {
   width: 80%;
   border: 2px solid #030303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #MalO-text {
@@ -552,27 +559,53 @@ footer a {
   #logo {
     padding-right: 20px;
   }
-}
-
-/* Tablets and larger */
-@media screen and (min-width: 768px) {
 
   #login {
     padding: 0 1.5em 3em;
   }
-
+  
   #SCP-logo {
     width: 50%;
   }
+
+}
+
+/* Tablets and larger */
+@media screen and (min-width: 768px) {
 
   #login-form input {
     font-size: 1em;
     margin-bottom: 3px;
   }
 
-  #MalO {
-    width: 600px;
-    height: auto;
+  #welcome-page {
+    column-count: 2;
+  }
+
+  #welcome-div1 {
+    width: 50%;
+  }
+
+  #reference-image {
+    width: 40%;
+    justify-content: flex-end;
+  }
+
+  /* column code taken directly from W3Schools */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #MalO-figure {
+    width: 60%;
   }
 
 }
@@ -584,6 +617,9 @@ footer a {
     font-size: 1.1em;
   }
   
+  #MalO-figure {
+    width: 40%;
+  }
 
   #help-menu {
     top: 50%;
