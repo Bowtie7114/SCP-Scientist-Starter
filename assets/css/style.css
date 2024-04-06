@@ -281,15 +281,12 @@ main {
 .SCP-figure {
   width: 80%;
   border: 2px solid #030303;
+  box-shadow: 0 1px 6px rgba(0,0,0,.25);
 }
 
 .SCP-image {
   width: 100%;
   height: auto;
-}
-
-#help {
-  
 }
 
 /* Help form style and appearance */
@@ -381,8 +378,40 @@ main {
 /* Secret page */
 
 #killswitch {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-  width: 80%;
+  width: 90%;
+}
+
+#killswitch-text {
+  text-align: center;
+  border: solid 2px #000;
+  padding: 1px 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  font-size: 0.8em;
+}
+
+#killswitch-text2 {
+  text-align: center;
+  border: solid 2px #000;
+  padding: 1px 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  font-size: 0.8em;
+  opacity: 0;
+}
+
+.SCP-info-secret {
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  opacity: 0;
+}
+
+#declaration {
+  opacity: 0;
 }
 
 /* Congrats page */
