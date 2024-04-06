@@ -484,12 +484,17 @@ main {
 
 /* Congrats page */
 
+#download-text {
+  text-align: center;
+}
+
 #id {
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-self: center;
 }
 
 #id-card {
@@ -509,6 +514,7 @@ main {
   cursor: pointer;
   border: 1px solid #030303;
   padding: 3px;
+  margin-top: 6px;
 }
 
 #download a {
@@ -518,6 +524,7 @@ main {
 
 #conclusion {
   padding-bottom: 2em;
+  text-align: center;
 }
 
 /* 404 */
@@ -651,6 +658,11 @@ footer a {
 
   /* Congrats page */
 
+  #id {
+    width: 50%;
+    height: auto;
+  }
+
   /* 404 page */
 
 
@@ -736,6 +748,11 @@ footer a {
 
   /* Congrats page */
 
+  #id {
+    width: 40%;
+
+  }
+
   /* 404 page */
 
 
@@ -746,5 +763,7 @@ footer a {
 
 /* Large screens */
 @media screen and (min-width: 1200px) {
-
+  #id {
+    width: 30%;
+  }
 }
