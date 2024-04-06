@@ -358,6 +358,18 @@ main {
 
 /* Breaches page */
 
+.threats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.empty {
+  padding: 5px 5px;
+}
+
 #captcha-text {
   display: none;
 }
