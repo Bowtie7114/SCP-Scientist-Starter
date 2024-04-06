@@ -164,8 +164,9 @@ A site can be deployed to GitHub Pages by:
 - [SCP-001](https://scp-wiki.wikidot.com/scp-001), Berryman-Langford Kill Agent image from this page utilised.
 - [SCP-006](https://scp-wiki.wikidot.com/scp-006), the Fountain of Youth, used in the O5 exclusive page, secret.html
 - [SCP-027-FR](http://scp-int.wikidot.com/scp-027-fr) used as a QR Code on the User's created Access Pass, acting as a meta, in-universe Rick Roll.
-- [SCP-096](https://scp-wiki.wikidot.com/scp-096), the Shy Guy, mentioned in help menu in scps.html.
+- [SCP-096](https://scp-wiki.wikidot.com/scp-096), the Shy Guy, mentioned in help menu in scps.html, and in breaches.html.
 - [SCP-106](https://scp-wiki.wikidot.com/scp-106), the Old Man, used as one of the SCPs assigned to the User.
+- [SCP-173](https://scp-wiki.wikidot.com/scp-173), the Statue, used as a cautionary tale on breaches.html.
 - [SCP-682](https://scp-wiki.wikidot.com/scp-682), the Hard-to-kill Reptile, used as an incorrect description on scps.html.
 - [SCP-847](https://scp-wiki.wikidot.com/scp-847), The Mannequin, used as one of the SCPs assigned to the User.
 - [SCP-914](https://scp-wiki.wikidot.com/scp-914), The Clockworks, used as one of the SCPs assigned to the User.
@@ -180,6 +181,9 @@ A site can be deployed to GitHub Pages by:
 - Image of SCP-914, The Clockworks, from the game SCP: Secret Laboratory, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/SCP-914).
 - Image of a plushie SCP-999, The Tickle Monster, taken from the [Plushy Factory Website](https://plushfoundry.com/products/scp-999-tickle-monster).
 - Image of SCP-847, The Mannequin, taken from the [SCP Foundation site](https://scp-wiki.wikidot.com/scp-847) 847 entry page.
+- Image of SCP-096, the Shy Guy, taken from the [SCP Fandom Wikia](https://scp-secret-laboratory-official.fandom.com/wiki/SCP-096), altered by me.
+- Image of SCP-173, the Statue, taken from the [SCP Fandom Wikia]("https://scp-secret-laboratory-official.fandom.com/wiki/SCP-173").
+- Image of Chaos Insurgent from Reddit User [NotALurker101](https://www.reddit.com/r/SCP/comments/191cx8q/chaos_insurgency_cosplay_inquiry_would_it_be/).
 
 ### Licensing ###
 As per the [SCP Licensing Guide](https://scp-wiki.wikidot.com/licensing-guide), this project is also subject to the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) licensing agreement.
