@@ -20,7 +20,7 @@ function fadeAnimation(element, opacity) {
         element.style.opacity = opacity;
         opacity += 0.01;
     }, 10);
-}
+};
 
 document.addEventListener("DOMContentLoaded", function() {
     if (page === 'index.html' || page === '') {
@@ -44,7 +44,24 @@ document.addEventListener("click", function() {
             clicks = 1;
         }   
     }
-})
+});
+
+/**
+ * Fade in animation for secret.html. Only the Berryman-Langford kill agent and message will appear. Once the User clicks the button, the remaining information
+ * will fade in and the button will dissappear.
+ */
+if (page === 'secret.html') {
+    document.getElementById("alive").addEventListener("click", function() {
+            var killswitchText = document.getElementById('killswitch-text2');
+            var scpInfoSecret = document.getElementById('SCP-info-secret');
+            var declaration = document.getElementById('declaration');
+            var alive = document.getElementById('alive');
+            fadeAnimation(killswitchText, 0);
+            fadeAnimation(scpInfoSecret, 0);
+            fadeAnimation(declaration, 0);
+            alive.style.display = 'none';
+    });
+};
 
 
 /** 
@@ -62,13 +79,13 @@ function passCheck() {
     else {
       document.getElementById("login-button").disabled = true;
     }
-  }
+  };
 
   document.addEventListener('input', function() {
     if (page = 'index.html' || page === '') {
         passCheck();
     }
-  })
+  });
 
   /**
    * The Username is stored within the function and should be written to user.txt
@@ -79,7 +96,7 @@ function submit() {
      var username = document.getElementById('name').value;
      sessionStorage.setItem('name', username);
      sessionStorage.setItem('points', 0);
-}
+};
 
 if (page === 'index.html' || page === '') {
     document.getElementById('login-button').addEventListener("click", submit);   
@@ -92,7 +109,7 @@ if (page === 'index.html' || page === '') {
 
 function redirect() {
     window.location.href = 'welcome.html';
-}
+};
 
 /**
  * Username will be applied to the h1 element on welcome.html and the downloadable ID pass on congrats.html with this function
@@ -103,7 +120,7 @@ if (page === 'welcome.html') {
     let welcomeTitle = document.getElementById('welcome-title');
     let username = sessionStorage.getItem("name");
     welcomeTitle.innerHTML = `Welcome, ${username}`;
-}
+};
 
 /**
  * Image of MalO on welcome.html should change, along with the caption, to an SCP Scientist and appropriate text,
@@ -121,8 +138,8 @@ function correctImage() {
     if (points === 0) {
         alert('1 out of 4 found.');
         sessionStorage.setItem('points', 1);      
-    } 
-}
+    }; 
+};
 
 /**
  * Description of SCP-106 will be changed once the correct description on the help menu is selected, and the couunter will continue. If an incorrect one is selected,
@@ -146,7 +163,7 @@ function correctDescription(answer) {
     document.getElementById("help-toggle").style.display = "none";
     document.getElementById("help-form").style.display = "none";
     document.getElementById("help-toggle-label").style.display = "none";
-}
+};
 
 /**
  * One letter within the Meetings paragraph in responsibilities.html will change once the User clicks on it. It will also tick the stored number to three.
@@ -160,7 +177,7 @@ function correctLetter() {
         alert('3 out of 4 found.');
         sessionStorage.setItem('points', 3);     
     }    
-}
+};
 
 /**
  * Captcha images should appear randomly out of 4 once function is called (event listener at top of scriptsheet).
@@ -182,7 +199,7 @@ function correctCaptcha() {
     image.alt = alts[index];
     image.ariaLabel = alts[index];
     captchaValue = answers[index];
-}
+};
 
 /**
  * Final counting upwards function, once the Captcha has been noted as correct. To prevent User from making innocent mistakes, entered text is set to lowercase in
@@ -198,15 +215,15 @@ function captchaCheck() {
             sessionStorage.setItem('points', 4);
             var link = document.getElementById('breach-button');
             link.href = "secret.html";     
-        }
-    }
-}
+        };
+    };
+};
 
 /**
  * This function resets the entire run - pressing F5 should refresh the session by loading index.html and
  * clearing any and all cached information
  *
-document.addEventListener("keydown", (e) => {
+document.addEventListener('keydown', (e) => {
     if (e.key === 'F5') {
         sessionStorage.clear();        
     }

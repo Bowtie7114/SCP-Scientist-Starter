@@ -385,6 +385,17 @@ main {
   width: 90%;
 }
 
+#alive {
+  font-family: 'Inter', Arial, sans-serif;
+  height: 2em;
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid #030303;
+  padding-left: 3px;
+  padding-right: 3px;
+  
+}
+
 #killswitch-text {
   text-align: center;
   border: solid 2px #000;
@@ -402,7 +413,7 @@ main {
   opacity: 0;
 }
 
-.SCP-info-secret {
+#SCP-info-secret {
   font-size: 0.8em;
   display: flex;
   flex-direction: column;
