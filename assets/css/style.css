@@ -629,6 +629,26 @@ footer a {
 
   /* Secret page */
 
+  #SCP-info-secret {
+    font-size: 1em;
+    width: 90%;
+    height: auto;
+  }
+
+  #declaration {
+    font-size: 0.9em;
+  }
+
+  #killswitch-text {
+    width: 50%;
+    align-self: center;
+  }
+
+  #killswitch-text2 {
+    width: 50%;
+    align-self: center;
+  }
+
   /* Congrats page */
 
   /* 404 page */
@@ -709,6 +729,10 @@ footer a {
   }
 
   /* Secret page */
+
+  #SCP-info-secret {
+    width: 70%;
+  }
 
   /* Congrats page */
 
