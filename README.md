@@ -157,7 +157,8 @@ The [W3C HTML Validator]() was used for each separate html page and showed the f
 - welcome.html did not pass due to a trailing slash on an input and an error that an 'a' element must not be a descendant of a button element.<br>
 The code for this was ``` ``` <br>
 It has been changed to ```<input type="button" id="next-page-button" onclick="location.href='scps.html';" value="Next page">```<br>.
-As this will be the same for each page with this error, they will not be repeated below.
+Upon changing the above, no further errors were identified:<br>
+![welcome validator]()<br><br>
 
 - CSS
 The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors upon testing at the end of development.<br><br>
