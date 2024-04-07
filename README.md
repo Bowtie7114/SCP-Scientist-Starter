@@ -160,7 +160,21 @@ It has been changed to ```<input type="button" id="next-page-button" onclick="lo
 Upon changing the above, no further errors were identified:<br>
 ![welcome validator](docs/readme_images/welcome_validator.PNG)<br><br>
 
-- scps.html did not pass due to a p element being the child of a ul element. This was changed to an li and the issue resolved.
+- scps.html did not pass due to a p element being the child of a ul element. This was changed to an li and the issue resolved.<br>
+![scps validator](docs/readme_images/scps_validator.PNG)<br><br>
+
+- responsibilities.html passed on the first test after development:<br>
+![responsibilities validator](docs/readme_images/responsibilities_validator.PNG)<br><br>
+
+- breaches.html did not pass due to an empty img src. This will not be fixed however as it is part of the JavaScript functionality and is filled in once conditions are met, and testing on multiple browsers did not show an issue with overall functionality.<br>
+For future fixes, it may be better to upload a placeholder image and render it invisible, then changing the image and rendering it visible again once conditions are met:<br>
+![breaches validator](docs/readme_images/breaches_validator.PNG)<br><br>
+
+- secret.html passed on the first test after development:<br>
+![secret validator](docs/readme_images/secret_validator.PNG)<br><br>
+
+- congrats.html did not pass due to an a element being a child of a button element. This was the download button rather than next page button like the other examples. After resolving, the no errors were found:<br>
+![congrats validator]()<br><br>
 
 - CSS
 The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors upon testing at the end of development.<br><br>

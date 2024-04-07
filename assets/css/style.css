@@ -497,6 +497,11 @@ main {
   align-self: center;
 }
 
+#id form {
+  justify-content: center;
+  align-self: center;
+}
+
 #id-card {
   width: 80%;
   display: block;
