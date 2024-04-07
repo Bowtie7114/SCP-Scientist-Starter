@@ -174,7 +174,10 @@ For future fixes, it may be better to upload a placeholder image and render it i
 ![secret validator](docs/readme_images/secret_validator.PNG)<br><br>
 
 - congrats.html did not pass due to an a element being a child of a button element. This was the download button rather than next page button like the other examples. After resolving, the no errors were found:<br>
-![congrats validator]()<br><br>
+![congrats validator](docs/readme_images/congrats_validator.PNG)<br><br>
+
+- 404.html passed on teh second test, after changing the button to an input from earlier:<br>
+![404 validator](docs/readme_images/404_validator.PNG)<br><br>
 
 - CSS
 The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors upon testing at the end of development.<br><br>
