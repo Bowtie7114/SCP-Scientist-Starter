@@ -8,31 +8,67 @@ as a way to stoke curiosity, with many links, images, and references to the main
 ![Scientist Orientation Mockup](docs/readme_images/scp_mockup.PNG)
 
 ## Features ##
+All features moving forwards will be listed. To experience them first hand it is recommended to test the website first, then read this section.<br>
+Any links/references are made using superscripted numbers inside square brackets. These are then available to check in the footer with URLs to the pages, opening in separate tabs.<br>
 ### Login page ###
+
+When first loading the page the Logo, title, and login form will fade in due to a JavaScript function monitoring for the loading of the web content. You then log in using a name and password of your choice.<br>
+All three fields must be filled in, and the password fields must match, and the login button will then enable, also controlled by a web listener function. Once logged in, another function activates to save the Username and begin incrementing a number from 0.<br>
+
+![index disabled](docs/readme_images/index_disabled.PNG)
+![index enabled](docs/readme_images/index_enabled.PNG)<br><br>
 
 ### Welcome page ###
 
-### SCPs page ###
+Within the welcome page, the Username entered from the login page is entered at the top with a separate function. The User must then interact with the image of MalO by clicking on it to trigger the first event.<br>
+This changes the image and caption underneath, and triggers an alert, counting up the earlier number from 0 to 1.<br>
 
-### Responsibilities page ###
-
-### Containment Breaches page ###
-
-### Secret page ###
-### Login page ###
-
-### Welcome page ###
+![welcome before](docs/readme_images/welcome_before.PNG)
+![welcome after](docs/readme_images/welcome_after.PNG)<br><br>
 
 ### SCPs page ###
 
+Once the user moves on, they will need to select a black box at the bottom right of the page, opening a context menu. Once they select the correct option AND they selected MalO previously, they are presented with the alert and increment of their score.<br>
+If they are incorrect, then a separate alert will trigger and the score will not increment. In both instances, the menu and box dissapear.<br>
+
+![scps before](docs/readme_images/scps_before.PNG)
+![scps menu](docs/readme_images/scps_menu.PNG)
+![scps wrong](docs/readme_images/scps_wrong.PNG)
+![scps after](docs/readme_images/scps_after.PNG)<br><br>
+
 ### Responsibilities page ###
+
+The responsiblities page is bare, but this is because the user must carefully read the paragraphs. So long as they have two points, and find the wrong letter, they can click on it to increment their score and change the letter.<br>
+
+![cafetoria](docs/readme_images/cafetoria.PNG)
+![cafeteria](docs/readme_images/cafeteria.PNG)<br><br>
 
 ### Containment Breaches page ###
 
+Once all three points up to this point are collected, a Captcha will appear at the end. It is not case sensitive, changed within the function, and the User can make as many mistakes as they like.<br>
+Once the captcha is complete, they are immediately redirected to the secret page. If they do not have three points when on this page, it will not appear.<br>
+
+![captcha](docs/readme_images/captcha.PNG)
+![no captcha](docs/readme_images/no_captcha.PNG)<br><br>
+
 ### Secret page ###
+
+Should the User complete the captcha, they will be directed to this page. Clicking the "Are you alive?" button fades in the information, and once they have read it, they can progress to the last page at their leisure.<br>
+
+![before button](docs/readme_images/before_button.PNG)
+![after button](docs/readme_images/after_button.PNG)
 
 ### Congratulations Page ###
-The downloadable image has been purposefully left as a .png file in case Users wish to actually utilise it. A lot of non-web based applications do not recognise .webp and will either throw an error or change the file type.
+The downloadable image has been purposefully left as a .png file in case Users wish to actually utilise it. A lot of non-web based applications do not recognise .webp and will either throw an error or change the file type.<br>
+Upon selecting download, the User will be presented with the image in a new tab to right-click and save. Otherwise, they can restart the experience from the Login page by selecting the button to do so.<br>
+
+![congrats end](docs/readme_images/congrats_end.PNG)<br><br>
+
+### 404 page ###
+
+Should the User find their way here, they can simply press the button to return to the initial login page.<br>
+
+![404 end](docs/readme_images/404_end.PNG)<br><br>
 
 ## Design ##
 ### Wireframe ###
