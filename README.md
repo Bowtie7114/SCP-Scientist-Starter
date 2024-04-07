@@ -142,7 +142,18 @@ Final Page Mobile: <br>
 
 ## Testing (May be in separate .md file depending on size) ##
 ### Accessibility ###
-The [Wave Accessibility](https://wave.webaim.org/) tool was used for testing at the end of development.
+The [Wave Accessibility](https://wave.webaim.org/) tool was used for testing at the end of development. Several key points were the lack of aria-labels, so these were added throughout the website,<br>
+especially for interactivity points, to remove the errors on the Accessibility Tool: <br><br>
+
+![index wave tool](docs/readme_images/index_wave.PNG)<br><br>
+
+The pages containing the animated nav menu all have an error that there is empty form label on the page. As this was code that was taken from elsewhere (and referenced) it shall not be altered: <br><br>
+
+![welcome wave tool](docs/readme_images/welcome_wave.PNG)<br><br>
+
+On responsibilities.html there is a contrast error as the entire paragraph has been blacked out. These same errors appear on secret.html and breaches.html for similar reasons. This is intentional and so it will not be changed:<br><br>
+
+![responsiblities wave tool](docs/readme_images/responsibilities_wave.PNG)<br><br>
 
 ### Lighthouse ###
 Lighthouse testing was performed using Google Chrome and all images were first-time runs after the completion of development. <br><br>
