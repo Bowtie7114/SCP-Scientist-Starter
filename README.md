@@ -176,7 +176,7 @@ Final Page Mobile: <br>
   <br> Used to compress image files before upload to increase web loading performance.
 - [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/) Used to create the mockup at the top of the README.
 
-## Testing (May be in separate .md file depending on size) ##
+## Testing ##
 ### Accessibility ###
 The [Wave Accessibility](https://wave.webaim.org/) tool was used for testing at the end of development. Several key points were the lack of aria-labels, so these were added throughout the website,<br>
 especially for interactivity points, to remove the errors on the Accessibility Tool: <br><br>
@@ -204,6 +204,140 @@ Lighthouse testing was performed using Google Chrome and all images were first-t
 ![404 page](docs/readme_images/404_lighthouse.PNG) <br>
 
 ### Functional ###
+All links, buttons, and functions were tested throughout and at the end of development to ensure correct functionality and that new changes did not hamper said functionality:<br>
+
+#### Navigational Links ####
+All page links were tested thoroughly throughout development, and again by multiple test users by selecting each link on each page individually. All links routed to the correct pages as expected throughout.
+
+| Navigation Link         | Page to Load            |
+| ----------------------- | ----------------------- |
+| Sign in button          | welcome.html            |
+| Welcome                 | welcome.html            |
+| Your SCPs               | scps.html               |
+| Next page button        | scps.html               |
+| Responsibilities        | responsibilities.html   |
+| Next page button        | responsibilities.html   |
+| Breaches                | breaches.html           |
+| Next page button        | breaches.html           |
+| Next page button        | congrats.html           |
+| Sign Out button         | congrats.html           |
+| Restart Orientation     | index.html              |
+| Return to Login button  | index.html              |
+
+All footnotes links were tested and resulted in a new tab being opened and the correct web page being loaded.
+
+#### Form Testing ####
+
+The forms in this site are the Login page and the Captcha on breaches.html.
+The Login form is set to only activate the button once all three fields are entered and the passwords match.
+
+It was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
+
+_Scenario One - Correct Inputs_
+Steps:
+
+1. Load [Login page](https://bowtie7114.github.io/SCP-Scientist-Starter/)
+2. Input the following data:
+   - Username: Jordan
+   - Password: pass
+   - Reenter: pass
+3. Click 'Sign In'
+
+Expected:
+
+The form submits without any errors and successfully redirects to welcome.html.
+
+Actual:
+
+Website behaved as expected.
+
+_Scenario Two - Missing Required Field Username_
+Steps:
+
+1. Load [Login page](https://bowtie7114.github.io/SCP-Scientist-Starter/)
+2. Input the following data:
+   - Username:
+   - Password: pass
+   - Reenter: pass
+3. Click 'Sign In'
+
+Expected:
+
+The login button to remain disabled and not allow redirect to welcome.html.
+
+Actual:
+
+As expected, button remained disabled.
+
+This step was repeated by leaving out data in each field. All showed the same results.
+
+_Scenario Three - Mis-matching Required Password Field_
+Steps:
+
+1. Load [Login page](https://bowtie7114.github.io/SCP-Scientist-Starter/)
+2. Input the following data:
+   - Username: Jordan
+   - Password: pass
+   - Reenter: pess
+3. Click 'Sign In'
+
+Expected:
+
+The login button to remain disabled and not allow redirect to welcome.html.
+
+Actual:
+
+As expected, button remained disabled.
+
+These next entries focus on the Captcha field:
+
+_Scenario One - Correct Inputs_
+Steps:
+
+1. Obtain three points through the site.
+2. Load into the [breaches page](https://bowtie7114.github.io/SCP-Scientist-Starter/breaches.html)
+3. Input the correct Captcha - in this case 'forklift'
+4. Click 'Submit Captcha'
+
+Expected:
+
+The form submits without any errors and successfully activates the correct function.
+
+Actual:
+
+Website behaved as expected.
+
+_Scenario Two - Missing Information_
+Steps:
+
+1. Obtain three points through the site.
+2. Load into the [breaches page](https://bowtie7114.github.io/SCP-Scientist-Starter/breaches.html)
+3. Input nothing into the Captcha - which was in this case 'secure'
+4. Click 'Submit Captcha'
+
+Expected:
+
+For nothing to happen.
+
+Actual:
+
+As expected, nothing happened and the captcha could be re-entered.
+
+_Scenario Three - Mis-matching Information_
+Steps:
+
+1. Obtain three points through the site.
+2. Load into the [breaches page](https://bowtie7114.github.io/SCP-Scientist-Starter/breaches.html)
+3. Input the incorrect Captcha - which was still 'secure'
+4. Click 'Submit Captcha'
+
+Expected:
+
+For nothing to happen.
+
+Actual:
+
+As expected, nothing happened and the captcha could be re-entered.
 
 ### Validators ###
 - HTML

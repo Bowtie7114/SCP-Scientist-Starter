@@ -428,6 +428,16 @@ main {
   padding-right: 3px;
 }
 
+#breach-button {
+  font-family: 'Inter', Arial, sans-serif;
+  height: 2em;
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid #030303;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 /* Secret page */
 
 #killswitch {
