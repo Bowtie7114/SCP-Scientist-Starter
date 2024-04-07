@@ -158,7 +158,9 @@ The [W3C HTML Validator]() was used for each separate html page and showed the f
 The code for this was ``` ``` <br>
 It has been changed to ```<input type="button" id="next-page-button" onclick="location.href='scps.html';" value="Next page">```<br>.
 Upon changing the above, no further errors were identified:<br>
-![welcome validator]()<br><br>
+![welcome validator](docs/readme_images/welcome_validator.PNG)<br><br>
+
+- scps.html did not pass due to a p element being the child of a ul element. This was changed to an li and the issue resolved.
 
 - CSS
 The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors upon testing at the end of development.<br><br>
