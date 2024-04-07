@@ -19,6 +19,17 @@ as a way to stoke curiosity, with many links, images, and references to the main
 ### Containment Breaches page ###
 
 ### Secret page ###
+### Login page ###
+
+### Welcome page ###
+
+### SCPs page ###
+
+### Responsibilities page ###
+
+### Containment Breaches page ###
+
+### Secret page ###
 
 ### Congratulations Page ###
 The downloadable image has been purposefully left as a .png file in case Users wish to actually utilise it. A lot of non-web based applications do not recognise .webp and will either throw an error or change the file type.
