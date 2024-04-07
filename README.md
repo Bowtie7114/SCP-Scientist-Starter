@@ -3,10 +3,22 @@ The SCP Scientist Orientation is an interactive website in which the user takes 
 The purposefully sterile look of the site should belay the overall feel of the Foundation compared to what they do, with descriptions and images of protocols and SCPs, and links in the footnotes to the main source of information for them.<br><br>
 
 The site's intended audience is those who are familiar with the SCP Foundation and enjoy perusing the non-canon content on offer, as well as those not massively familiar with the Foundation, <br>
-as a way to stoke curiosity, with many links, images, and references to the main site to allow them to explore further.
+as a way to stoke curiosity, with many links, images, and references to the main site to allow them to explore further. The live site can be accessed here: [SCP Scientist Orientation](https://bowtie7114.github.io/SCP-Scientist-Starter/index.html).<br><br>
+
+![Scientist Orientation Mockup](docs/readme_images/scp_mockup.PNG)
 
 ## Features ##
+### Login page ###
 
+### Welcome page ###
+
+### SCPs page ###
+
+### Responsibilities page ###
+
+### Containment Breaches page ###
+
+### Secret page ###
 
 ### Congratulations Page ###
 The downloadable image has been purposefully left as a .png file in case Users wish to actually utilise it. A lot of non-web based applications do not recognise .webp and will either throw an error or change the file type.
@@ -115,6 +127,7 @@ Final Page Mobile: <br>
   <br> Used to convert images to .webp format.
 - tinypng.com
   <br> Used to compress image files before upload to increase web loading performance.
+- [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/) Used to create the mockup at the top of the README.
 
 ## Testing (May be in separate .md file depending on size) ##
 ### Accessibility ###
@@ -122,6 +135,23 @@ Final Page Mobile: <br>
 ### Lighthouse ###
 
 ### Functional ###
+
+### Validators ###
+- HTML
+The [W3C HTML Validator]() was used for each separate html page and showed the following:
+
+- index.html passed on the first test after development:<br>
+![index Validator](docs/readme_images/index_validator.PNG)<br><br>
+
+- welcome.html did not pass due to a trailing slash on an input and an error that an 'a' element must not be a descendant of a button element.<br>
+The code for this was ``` ``` <br>
+It has been changed to ```<input type="button" id="next-page-button" onclick="location.href='scps.html';" value="Next page">```<br>.
+As this will be the same for each page with this error, they will not be repeated below.
+
+- CSS
+The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors upon testing at the end of development.<br><br>
+
+![CSS Validator](docs/readme_images/CSS_validator.PNG)<br><br>
 
 ### Bugs and Fixes ###
 - A separate scriptsheet was created specifically for the index page, index.js, to house the animation javascript code. It would run on other pages continuously as it was looking for elements that did not exist on those pages due to the eventhandler 
