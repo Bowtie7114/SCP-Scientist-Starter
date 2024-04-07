@@ -3,10 +3,20 @@ The SCP Scientist Orientation is an interactive website in which the user takes 
 The purposefully sterile look of the site should belay the overall feel of the Foundation compared to what they do, with descriptions and images of protocols and SCPs, and links in the footnotes to the main source of information for them.<br><br>
 
 The site's intended audience is those who are familiar with the SCP Foundation and enjoy perusing the non-canon content on offer, as well as those not massively familiar with the Foundation, <br>
-as a way to stoke curiosity, with many links, images, and references to the main site to allow them to explore further.
+as a way to stoke curiosity, with many links, images, and references to the main site to allow them to explore further. The live site can be access here: [SCP Scientist Orientation](https://bowtie7114.github.io/SCP-Scientist-Starter/index.html).
 
 ## Features ##
+### Login page ###
 
+### Welcome page ###
+
+### SCPs page ###
+
+### Responsibilities page ###
+
+### Containment Breaches page ###
+
+### Secret page ###
 
 ### Congratulations Page ###
 The downloadable image has been purposefully left as a .png file in case Users wish to actually utilise it. A lot of non-web based applications do not recognise .webp and will either throw an error or change the file type.
@@ -122,6 +132,13 @@ Final Page Mobile: <br>
 ### Lighthouse ###
 
 ### Functional ###
+
+### Validators ###
+
+- CSS
+The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors upon testing at the end of development.<br><br>
+
+![CSS Validator](docs/readme_images/CSS_validator.png)<br><br>
 
 ### Bugs and Fixes ###
 - A separate scriptsheet was created specifically for the index page, index.js, to house the animation javascript code. It would run on other pages continuously as it was looking for elements that did not exist on those pages due to the eventhandler 
