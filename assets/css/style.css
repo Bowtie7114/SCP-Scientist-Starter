@@ -47,6 +47,10 @@ a {
   padding: 1.5em;
 }
 
+.login-labels {
+  display: none;
+}
+
 #SCP-logo {
   display: block;
   margin-left: auto;
