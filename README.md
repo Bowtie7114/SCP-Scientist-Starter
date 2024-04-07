@@ -143,7 +143,18 @@ Final Page Mobile: <br>
 ## Testing (May be in separate .md file depending on size) ##
 ### Accessibility ###
 The [Wave Accessibility](https://wave.webaim.org/) tool was used for testing at the end of development.
+
 ### Lighthouse ###
+Lighthouse testing was performed using Google Chrome and all images were first-time runs after the completion of development. <br><br>
+
+![login page](docs/readme_images/index_lighthouse.PNG) <br>
+![welcome page](docs/readme_images/welcome_lighthouse.PNG) <br>
+![scps page](docs/readme_images/scps_lighthouse.PNG) <br>
+![responsibilities page](docs/readme_images/responsibilities_lighthouse.PNG) <br>
+![breaches page](docs/readme_images/breaches_lighthouse.PNG) <br>
+![secret pages](docs/readme_images/secret_lighthouse.PNG) <br>
+![congrats page](docs/readme_images/congrats_lighthouse.PNG) <br>
+![404 page](docs/readme_images/404_lighthouse.PNG) <br>
 
 ### Functional ###
 
