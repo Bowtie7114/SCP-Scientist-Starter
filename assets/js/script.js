@@ -20,7 +20,7 @@ function fadeAnimation(element, opacity) {
         element.style.opacity = opacity;
         opacity += 0.01;
     }, 10);
-};
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     if (page === 'index.html' || page === '') {
@@ -61,7 +61,7 @@ if (page === 'secret.html') {
             fadeAnimation(declaration, 0);
             alive.style.display = 'none';
     });
-};
+}
 
 
 /** 
@@ -74,15 +74,15 @@ function passCheck() {
   
     if (password.value === vpassword.value && password.value.length > 0) {
       document.getElementById("login-button").disabled = false;
-      ;
+
     }
     else {
       document.getElementById("login-button").disabled = true;
     }
-  };
+  }
 
   document.addEventListener('input', function() {
-    if (page = 'index.html' || page === '') {
+    if (page === 'index.html' || page === '') {
         passCheck();
     }
   });
@@ -96,11 +96,11 @@ function submit() {
      var username = document.getElementById('name').value;
      sessionStorage.setItem('name', username);
      sessionStorage.setItem('points', 0);
-};
+}
 
 if (page === 'index.html' || page === '') {
     document.getElementById('login-button').addEventListener("click", submit);   
-};
+}
 
 /**
  *  Function links index.html to welcome.html via the sign in button once it is active.
@@ -109,7 +109,7 @@ if (page === 'index.html' || page === '') {
 
 function redirect() {
     window.location.href = 'welcome.html';
-};
+}
 
 /**
  * Username will be applied to the h1 element on welcome.html and the downloadable ID pass on congrats.html with this function
@@ -120,7 +120,7 @@ if (page === 'welcome.html') {
     let welcomeTitle = document.getElementById('welcome-title');
     let username = sessionStorage.getItem("name");
     welcomeTitle.innerHTML = `Welcome, ${username}`;
-};
+}
 
 /**
  * Image of MalO on welcome.html should change, along with the caption, to an SCP Scientist and appropriate text,
@@ -140,8 +140,8 @@ function correctImage() {
     if (points === 0) {
         alert('1 out of 4 found.');
         sessionStorage.setItem('points', 1);      
-    }; 
-};
+    }
+}
 
 /**
  * Description of SCP-106 will be changed once the correct description on the help menu is selected, and the couunter will continue. If an incorrect one is selected,
@@ -158,14 +158,14 @@ function correctDescription(answer) {
             sessionStorage.setItem('points', 2);     
         }
     } else if (answer === 'answer4') {
-        alert("Issue not detected, closing help menu. Your next of kin shall be notified.")
+        alert("Issue not detected, closing help menu. Your next of kin shall be notified.");
     } else {
         alert("Issue not detected, closing help menu.");
     }
     document.getElementById("help-toggle").style.display = "none";
     document.getElementById("help-form").style.display = "none";
     document.getElementById("help-toggle-label").style.display = "none";
-};
+}
 
 /**
  * One letter within the Meetings paragraph in responsibilities.html will change once the User clicks on it. It will also tick the stored number to three.
@@ -180,7 +180,7 @@ function correctLetter() {
         alert('3 out of 4 found.');
         sessionStorage.setItem('points', 3);     
     }    
-};
+}
 
 /**
  * Captcha images should appear randomly out of 4 once function is called (event listener at top of scriptsheet).
@@ -189,9 +189,9 @@ function correctLetter() {
 var captchaValue = '';
 
 function correctCaptcha() {
-    images = ['assets/images/captcha1.webp', 'assets/images/captcha2.webp', 'assets/images/captcha3.webp', 'assets/images/captcha4.webp'];
-    alts = ['Foxtrot Oscar Romeo Kilo Lima Indigo Foxtrot Tango', 'Sierra Echo Charlie Uniform Romeo Echo', 'Papa Romeo Oscar Tango Echo Charlie Tango', 'Charlie Oscar November Tango Alpha Indigo November'];
-    answers = ['forklift', 'secure', 'protect', 'contain'];
+    var images = ['assets/images/captcha1.webp', 'assets/images/captcha2.webp', 'assets/images/captcha3.webp', 'assets/images/captcha4.webp'];
+    var alts = ['Foxtrot Oscar Romeo Kilo Lima Indigo Foxtrot Tango', 'Sierra Echo Charlie Uniform Romeo Echo', 'Papa Romeo Oscar Tango Echo Charlie Tango', 'Charlie Oscar November Tango Alpha Indigo November'];
+    var answers = ['forklift', 'secure', 'protect', 'contain'];
     var index = Math.floor(Math.random() * 4);
     var image = document.getElementById('captcha-image');
     
@@ -202,7 +202,7 @@ function correctCaptcha() {
     image.alt = alts[index];
     image.ariaLabel = alts[index];
     captchaValue = answers[index];
-};
+}
 
 /**
  * Final counting upwards function, once the Captcha has been noted as correct. To prevent User from making innocent mistakes, entered text is set to lowercase in
@@ -222,8 +222,8 @@ function captchaCheck() {
         document.getElementById("captcha-image").style.display = "none";
         document.getElementById("captcha-text").style.display = "none";
         document.getElementById("captcha-submit").style.display = "none";
-    };
-};
+    }
+}
 
 /**
  * This function resets the entire run - pressing F5 should refresh the session by loading index.html and

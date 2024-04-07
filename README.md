@@ -184,6 +184,14 @@ The [Jigsaw](https://jigsaw.w3.org/css-validator/) validator showed zero errors 
 
 ![CSS Validator](docs/readme_images/CSS_validator.PNG)<br><br>
 
+-JavaScript
+Using [JShint](https://jshint.com/) to validate my JavaScript, there were a total of 22 warnings with no errors, three undefined variables, and five unused variables. <br>
+Three warnings were the use of 'let' as it is available in ES6, one similar but template literals, and one regarding arrow function syntax, but all were not needing to change.
+One regarded a missing semicolon on line 161, which was added. The remaining were the use of unnecessary semi-colons, of which they were removed.<br>
+The function correctCaptcha has three variables not assigned correctly, and were assigned with 'var'.<br><br>
+
+Following this, only 5 warnings remained and these will be left to not damage functionality.<br><br>
+
 ### Bugs and Fixes ###
 - A separate scriptsheet was created specifically for the index page, index.js, to house the animation javascript code. It would run on other pages continuously as it was looking for elements that did not exist on those pages due to the eventhandler 
 allocated to it. Future attempts will work towards making it so that the separate page was not necessary.
