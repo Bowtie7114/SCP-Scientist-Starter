@@ -347,7 +347,7 @@ The [W3C HTML Validator]() was used for each separate html page and showed the f
 ![index Validator](docs/readme_images/index_validator.PNG)<br><br>
 
 - welcome.html did not pass due to a trailing slash on an input and an error that an 'a' element must not be a descendant of a button element.<br>
-The code for this was ``` ``` <br>
+The code for this was ```<button id="next-page-button><a href="scps.html">Next Page Button</a></button> ``` <br>
 It has been changed to ```<input type="button" id="next-page-button" onclick="location.href='scps.html';" value="Next page">```<br>.
 Upon changing the above, no further errors were identified:<br>
 ![welcome validator](docs/readme_images/welcome_validator.PNG)<br><br>
