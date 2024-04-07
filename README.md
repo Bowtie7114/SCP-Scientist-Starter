@@ -142,7 +142,7 @@ Final Page Mobile: <br>
 
 ## Testing (May be in separate .md file depending on size) ##
 ### Accessibility ###
-
+The [Wave Accessibility](https://wave.webaim.org/) tool was used for testing at the end of development.
 ### Lighthouse ###
 
 ### Functional ###
@@ -198,6 +198,9 @@ allocated to it. Future attempts will work towards making it so that the separat
 - Following on from the above - code was added on lines 1-5 of script.js that allows the page target from the URL to be shortened to just the html names (eg. index.html, welcome.html etc). I could then use if statements so that certain functions only worked on certain pages, preventing continuous loading where it was not needed.
 
 - When opening the python3 server the day after creating the fade animation, it ceased to work. This was because the if statement was checking for index.html, which did not appear on the end of the page URL when first loading, it appeared as an empty string. By adding the empty string as an or ( || ) to the if statement, it began to function as normal.
+
+- Upon changing ```buttons``` to ```inputs``` to allow for the use of href, the function that changed the Next Page link on breaches.html was broken and no longer changed it to point towards secret.html.<br>
+Upon changing the function from link.href to location.href, it instead immediately redirects to secret.html upon completion of the Captcha. As I found this behaviour preferable, I kept it and changed the alert to 'Redirecting...'<br><br>
 
 ## Deployment ##
 ### Version Control ###

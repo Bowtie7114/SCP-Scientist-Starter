@@ -214,10 +214,10 @@ function captchaCheck() {
     if (captchaValue === attempt) {
         var points = parseInt(sessionStorage.getItem("points"));
         if (points === 3) {
-            alert('4 out of 4 found. Please go to the next page.');
+            alert('4 out of 4 found. Redirecting...');
             sessionStorage.setItem('points', 4);
             var link = document.getElementById('breach-button');
-            link.href = "secret.html";     
+            location.href = "secret.html";     
         }        
         document.getElementById("captcha-image").style.display = "none";
         document.getElementById("captcha-text").style.display = "none";
